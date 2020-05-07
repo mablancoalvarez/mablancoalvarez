@@ -7,8 +7,7 @@ import Aboutme from './Aboutme';
 import Projects from './Projects';
 import Skills from './Skills';
 import Footer from './Footer';
-import Header2 from './Header2';
-import landing from '../images/landing.png';
+
 
 class App extends React.Component {
   // constructor() {
