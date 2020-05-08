@@ -3,15 +3,24 @@
     position: absolute;
     top: 25%;
     left: 50%;
+    font-size: 1rem;
     transform: translate(-50%, -50%);
-    height: 160px;
-    overflow:hidden;
- 
     font-family: 'Asap', sans-serif;
+    height: 80px;
+    overflow:hidden;
+   
+    
+    @include forTablet{
+    font-size: 1.5rem;
+    height: 160px;
+
+    }
+    @include forPc {
     font-size: 2.2rem;
     line-height: 40px;
     color: black;
-    
+    }
+
     &__container {
       font-weight: 900;
       overflow: hidden;
@@ -32,10 +41,15 @@
       &:after, &:before {
         position: absolute;
         top: 0;
-        
         color: #ff19ad;
-        font-size: 42px;
         line-height: 40px;
+    
+        @include forTablet{
+        font-size: 33px;
+        }
+        @include forPc {
+        font-size: 42px;
+        }
         
         -webkit-animation-name: opacity;
         -webkit-animation-duration: 2s;
@@ -46,9 +60,15 @@
       }
   
       &__text {
-        // display: inline;
+       
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+
         float: left;
         margin: 0;
+        @include forTablet{
+            margin-top:0;
+        }
       }
   
       &__list {
