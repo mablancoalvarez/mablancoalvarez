@@ -12,7 +12,7 @@
    
     @include forTablet{
     font-size: 1.5rem;
-    height: 160px;
+
 
     }
     @include forPc {
@@ -90,6 +90,10 @@
   
         @include forTablet{
             padding-left: 80px;
+            font-size: 1.5rem;
+        }
+        @include forPc {
+            font-size: 2.2rem;
         }
         &__item {
           line-height:40px;
