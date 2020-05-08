@@ -6,10 +6,10 @@
     font-size: 1rem;
     transform: translate(-50%, -50%);
     font-family: 'Asap', sans-serif;
-    height: 80px;
+    height: 160px;
     overflow:hidden;
+  
    
-    
     @include forTablet{
     font-size: 1.5rem;
     height: 160px;
@@ -25,7 +25,10 @@
       font-weight: 900;
       overflow: hidden;
       height: 40px;
-      padding: 0 40px;
+      padding: 0px 5px;
+      @include forTablet{
+        padding: 0 40px;
+      }
   
       &:before {
         content: '[';
@@ -60,20 +63,21 @@
       }
   
       &__text {
-       
         margin-bottom: 1rem;
         margin-top: 0.5rem;
 
         float: left;
-        margin: 0;
+       
         @include forTablet{
             margin-top:0;
+            margin: 0;
         }
       }
   
       &__list {
         margin-top: 0;
-        padding-left: 80px;
+        padding-left: 40px;
+       
         text-align: left;
         list-style: none;
         
@@ -84,6 +88,9 @@
         animation-duration: 10s;
         animation-iteration-count: infinite;
   
+        @include forTablet{
+            padding-left: 80px;
+        }
         &__item {
           line-height:40px;
           margin:0;
