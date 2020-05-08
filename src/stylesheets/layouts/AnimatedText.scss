@@ -1,18 +1,18 @@
 .content {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 160px;
     overflow:hidden;
     
-    font-family: 'Lato', sans-serif;
-    font-size: 35px;
+    font-family: 'Asap', sans-serif;
+    font-size: 2.2rem;
     line-height: 40px;
     color: black;
     
     &__container {
-      font-weight: 600;
+      font-weight: 900;
       overflow: hidden;
       height: 40px;
       padding: 0 40px;
@@ -32,7 +32,7 @@
         position: absolute;
         top: 0;
         
-        color: #16a085;
+        color: #ff19ad;
         font-size: 42px;
         line-height: 40px;
         
@@ -52,7 +52,7 @@
   
       &__list {
         margin-top: 0;
-        padding-left: 110px;
+        padding-left: 80px;
         text-align: left;
         list-style: none;
         
