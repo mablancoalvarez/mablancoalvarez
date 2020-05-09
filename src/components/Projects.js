@@ -11,40 +11,77 @@ import CardBack from './CardBack';
 //         <div>
 //             <Header2 />
 //             <h1>Projects</h1>
-          
+
 //         </div>
 //     )
 // }
 class Projects extends React.Component {
     constructor() {
-      super();
+        super();
         this.state = {
-        isFlipped: false
-      };
-      this.handleClick = this.handleClick.bind(this);
+        
+         isFlipped1: false,
+         isFlipped2: false,
+         isFlipped3: false
+
+        };
+        this.handleClick = this.handleClick.bind(this);
     }
-  
-    handleClick() {
+
+    handleClick(id) {
+        let key;
+     if ( id === "1"){
+        key = "isFlipped1";
+
+     }
      
-      this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+      else if ( id === "2"){
+        key = "isFlipped2";
+      }
+      else  
+        key = "isFlipped3";
+      
+        this.setState(prevState => ({ [key]: !prevState[key] }));
     }
-  
+
     render() {
-      return (
-         <div>
-          <Header2/>
-        <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
-          <CardFront
-            handleClick={this.handleClick}/>
-            
-  
-          <CardBack
-          handleClick={this.handleClick}
-             />
-        </ReactCardFlip>
-        </div>
-      )
+        return (
+            <div>
+                <Header2 />
+                <div className='card-container'>
+                    <div className='card-body'>
+                        <ReactCardFlip isFlipped={this.state.isFlipped1} flipDirection="horizontal">
+                            <CardFront 
+                                id= "1"
+                                textleft="Project"
+                                textright="1#"
+                                handleClick={this.handleClick} />
+                            <CardBack
+                                id ="1"
+                                title="Collapsing Margin"
+                                handleClick={this.handleClick}
+                            />
+
+                        </ReactCardFlip>
+                        <ReactCardFlip isFlipped={this.state.isFlipped2} flipDirection="horizontal">
+                            <CardFront
+                                id= "2"
+                                textleft="Project"
+                                textright="2#"
+                                handleClick={this.handleClick} />
+                            <CardBack
+                                id="2"
+                                title="Rick & Morty"
+                                handleClick={this.handleClick}
+                            />
+
+                        </ReactCardFlip>
+                    </div>
+                </div>
+            </div>
+
+        )
     }
-  }
+}
 
 export default Projects;
