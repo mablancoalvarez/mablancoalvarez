@@ -76,6 +76,19 @@ class Projects extends React.Component {
                             />
 
                         </ReactCardFlip>
+                        <ReactCardFlip isFlipped={this.state.isFlipped3} flipDirection="horizontal">
+                            <CardFront
+                                id= "3"
+                                textleft="Project"
+                                textright="3#"
+                                handleClick={this.handleClick} />
+                            <CardBack
+                                id="3"
+                                title="ShowTv"
+                                handleClick={this.handleClick}
+                            />
+
+                        </ReactCardFlip>
                     </div>
                 </div>
             </div>
