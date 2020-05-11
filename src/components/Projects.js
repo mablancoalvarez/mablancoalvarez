@@ -60,6 +60,7 @@ class Projects extends React.Component {
                                 id ="1"
                                 title="Collapsing Margin"
                                 handleClick={this.handleClick}
+                                img = 'https://source.unsplash.com/w8YICpz1I10/600x458'
                             />
 
                         </ReactCardFlip>
