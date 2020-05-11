@@ -13,13 +13,12 @@ const CardBack = (props) =>{
          
           <img src={props.img} />
           <div className="text-into">
-            <h1>{props.title}!</h1>
-            <button  id ={props.id} onClick={handleClick}>Click to flip</button>
             </div>
             {/* <CardProfileLinks /> */}
           </div>
         </div>
        </div>
+       <button  id ={props.id} onClick={handleClick}>Click to flip</button>
       </div>
       )
     }

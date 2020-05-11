@@ -59,7 +59,7 @@ class Projects extends React.Component {
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id ="1"
-                                title="Collapsing Margin"
+                                title="Awesome Profile Cards"
                                 handleClick={this.handleClick}
                                 img = {awesome}
                             />
