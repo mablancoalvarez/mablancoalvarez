@@ -3,6 +3,7 @@ import Header2 from './Header2';
 import ReactCardFlip from 'react-card-flip';
 import CardFront from './CardFront';
 import CardBack from './CardBack';
+import awesome from '../images/awesome.png';
 
 
 // const Projects = () => {
@@ -60,7 +61,7 @@ class Projects extends React.Component {
                                 id ="1"
                                 title="Collapsing Margin"
                                 handleClick={this.handleClick}
-                                img = 'https://source.unsplash.com/w8YICpz1I10/600x458'
+                                img = {awesome}
                             />
 
                         </ReactCardFlip>

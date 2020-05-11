@@ -28,7 +28,7 @@ const CardFront = (props) => {
                         <h1>UI/UX Designer</h1> */}
 
                         <p>Andrey is driven by turning ideas into scalable and and empowering experiences that solve real life problems.</p>
-                        <button id ={props.id} onClick={handleClick}>Click to flip</button>
+                        <button id ={props.id} onClick={handleClick}> + info</button>
                     {/* </div> */}
                 </div>
             </div>
