@@ -34,8 +34,6 @@
     // height: 420px;
     perspective: 1000px;
     font-family: "Asap" !important;
-    
-    
 }
 
 img {
@@ -43,44 +41,57 @@ img {
     max-height: 100%;
 }
 
-.row {
-   
-    margin-bottom: 30px;
- 
-.front-text {
-   
-    font-family: "Asap" !important;
-    display: flex;
-    min-width: 100%;
-    max-height: 230px;
-    @include forTablet {
-        min-height: 390px;
-    }
+// .col {
 
-    h2 {
-        font-size: 6rem;
-        text-align: center;
-        margin-top:55% !important;
-      
-    }
-    .text-center {
-        font-size: 4rem;
-        text-transform: uppercase;
-        margin-top: 10%;
-    }
-    .left {
-        background-color: #2fffc5;
-        border-radius: 15px;
-    }
-    
-    .right {
-        width: 60%;
-    }
-    .left {
-        width: 40%;
-    }
-}
-}
+//     margin-bottom: 30px;
+
+// .front-text {
+//     font-family: "Asap" !important;
+//     display: flex;
+//     min-width: 100%;
+//     max-height: 230px;
+//     @include forTablet {
+//         min-height: 390px;
+//        min-width: 100%;
+//     }
+
+//     .text-center{
+//         text-align: center;
+//         font-size: 2.5rem;
+//         text-transform: uppercase;
+//         margin-top: 20%;
+//         border-left: 3px solid #ea36af;
+//         border-right: 3px solid #75fa69;
+//         @include forTablet {
+//            font-size: 4rem;
+
+//         }
+//     }
+//     h2 {
+//         font-size: 3rem;
+//         text-align: center;
+//         margin-top: 40% !important;
+
+//         @include forTablet {
+//         font-size: 6rem;
+//         margin-top:55% !important;
+//         }
+
+//     }
+
+//     .left {
+//         background-color: #2fffc5;
+//          border-radius: 5px !important;
+//     }
+
+//     .right {
+//         width: 60%;
+//     }
+//     .left {
+//         width: 40%;
+//     }
+// }
+// }
 
 /*- Card body -*/
 //   .card-body {
@@ -122,10 +133,27 @@ img {
 
     .side-front-content {
         padding-top: 32px;
-        padding-right: 32px;
-        padding-bottom: 32px;
+    }
+.right{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+  
+
+   p.text-center {
+        font-weight: 600;
+        font-family: "Asap" !important;
+        text-align: center!important;
+        display: inline-block;
+        align-content: center;
+        padding: 8px;
+      
+        border-left: 3px solid #ea36af;
+        border-right: 3px solid #43f6ae;
     }
 }
+}
+
 /*- Back side -*/
 .react-card-front {
     .side-back {
@@ -144,14 +172,13 @@ img {
         .img {
             min-width: 100%;
             height: 400px;
-            border-radius: 8px;
-           
         }
     }
 }
 .icons {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .btn-back {

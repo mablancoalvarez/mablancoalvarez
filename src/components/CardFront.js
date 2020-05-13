@@ -11,7 +11,7 @@ const CardFront = (props) => {
 
         <div className='card-side side-front' >
             <div className='container-fluid'>
-                <div className='row'>
+                <div className='col-xs-6 side-front-content'>
                     <div className="front-text">
                         <div className="left">
                             <div className="solid" style={props.style}><h2 className="text-center">{props.textleft}</h2>

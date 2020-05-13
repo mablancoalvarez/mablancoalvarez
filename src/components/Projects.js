@@ -54,7 +54,8 @@ class Projects extends React.Component {
                             <CardFront 
                                 id= "1"
                                 textleft="1#"
-                                textright="Awesome Profile Cards"
+                                textright="Awesome 
+                                            Cards"
                                 textcontent="Digital Card Generator is a project made with React Js , starting from Vanila Javascript legacy code and using twitter's Rest API. We can customize the look of the card, filling in the data through a form and including dark mode."
                                 handleClick={this.handleClick} />
                             <CardBack
