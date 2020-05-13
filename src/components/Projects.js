@@ -53,8 +53,8 @@ class Projects extends React.Component {
                         <ReactCardFlip isFlipped={this.state.isFlipped1} flipDirection="horizontal">
                             <CardFront 
                                 id= "1"
-                                textleft="Awesome Profile Cards"
-                                textright="1#"
+                                textleft="1#"
+                                textright="Awesome Profile Cards"
                                 textcontent="Digital Card Generator is a project made with React Js , starting from Vanila Javascript legacy code and using twitter's Rest API. We can customize the look of the card, filling in the data through a form and including dark mode."
                                 handleClick={this.handleClick} />
                             <CardBack

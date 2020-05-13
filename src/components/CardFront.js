@@ -14,11 +14,11 @@ const CardFront = (props) => {
                 <div className='row'>
                     <div className="front-text">
                         <div className="left">
-                            <div className="solid" style={props.style}><h1 className="text-left">{props.textleft}</h1>
+                            <div className="solid" style={props.style}><h2 className="text-center">{props.textleft}</h2>
                             </div>
                         </div>
                         <div className="right">
-                            <p className="text-right">{props.textright}</p>
+                            <p className="text-center">{props.textright}</p>
                         </div>
                     </div>
 
