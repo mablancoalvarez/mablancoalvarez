@@ -5,7 +5,7 @@ const CardFront = (props) => {
 
     const handleClick = (event) => {
         props.handleClick(event.target.id)
-        console.log(event.target)
+        
     }
     return (
 
@@ -22,14 +22,14 @@ const CardFront = (props) => {
                         </div>
                     </div>
 
-                    {/* <div className='col-xs-6 side-front-content'>
-                        <h2>Czech based</h2>
+                     <div className='col-xs-6 side-front-content'>
+                        {/* /* <h2>Czech based</h2>
 
-                        <h1>UI/UX Designer</h1> */}
+                        <h1>UI/UX Designer</h1>  */}
 
-                        <p>Andrey is driven by turning ideas into scalable and and empowering experiences that solve real life problems.</p>
-                        <button id ={props.id} onClick={handleClick}> Échale un ojo</button>
-                    {/* </div> */}
+                        <p className="text-content">{props.textcontent}</p>
+                        <button id ={props.id} onClick={handleClick}> Take a Look</button>
+                    </div>
                 </div>
             </div>
 

@@ -1,8 +1,31 @@
-// // Cards 
+// // Cards
 * {
     box-sizing: border-box;
-    margin:0px;
+    margin: 0px;
     padding: 0px;
+}
+.projects-container {
+    background-image: url(../../images/bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+.card-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 440px;
+    @include forTablet {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.react-card-flip {
+    min-height: 150px !important;
+
+    @include forTablet {
+        min-height: 600px !important;
+    }
 }
 .card-container {
     position: relative;
@@ -11,60 +34,61 @@
     max-width: 720px;
     // height: 420px;
     perspective: 1000px;
+    font-family: "Asap" !important;
+}
 
-   
-  }
-  
-  img {
+img {
     max-width: 100%;
     max-height: 100%;
-  }
-  
-  .front-text{
-      display:flex;
-      min-width: 100%;
-      height: 400px;
+}
 
-      .left{
-      background-color: #2fffc5;
-      }
-      .text-right{
-          font-size: 3rem;
-      }
-      .text-left{
+.front-text {
+    display: flex;
+    min-width: 100%;
+    max-height: 230px;
+    @include forTablet {
+        min-height: 390px;
+    }
+
+    .left {
+        background-color: #2fffc5;
+    }
+    .text-right {
         font-size: 3rem;
-
-      }
-      .right{
-          width: 50%;
-      }
-      .left{
+    }
+    .text-left {
+        font-size: 3rem;
+    }
+    .right {
         width: 50%;
-      }
-  }
+    }
+    .left {
+        width: 50%;
+    }
+}
 
-  .row {
+.row {
     margin-bottom: 30px;
-  }
-  /*- Card body -*/
+}
+/*- Card body -*/
 //   .card-body {
 //     width: 100%;
 //     height: 100%;
 //     transform-style: preserve-3d;
 //     transition: all .7s linear;
 //   }
-  
+
 //   /*- Flipping the card -*/
 //   .card-container:hover .card-body {
 //     transform: rotateY(180deg);
 //   }
-  
+
 //   .card-container:hover > .card-body > .side-front {
 //     opacity: 0;
 //     visibility: hidden;
 //     transition: opacity 1s ease-in, visibility .75s linear;
 //   }
-  
+
 //   /*- Card sides -*/
 //   .card-side {
 //     position: absolute;
@@ -77,20 +101,20 @@
 //     backface-visibility: hidden;
 //     box-shadow: 0 10px 35px rgba(50,50,93,.1),0 2px 15px rgba(0,0,0,.07);
 //   }
-  
-  /*- Front side -*/
-  .side-front [class^=col-xs]:first-of-type {
+
+/*- Front side -*/
+.side-front [class^="col-xs"]:first-of-type {
     padding-left: 0;
-  }
-  
-  .side-front-content {
+}
+
+.side-front-content {
     padding-top: 32px;
     padding-right: 32px;
     padding-bottom: 32px;
-  }
-  
-  /*- Back side -*/
-  .side-back {
+}
+
+/*- Back side -*/
+.side-back {
     z-index: 2;
     // padding: 32px;
     text-align: center;
@@ -107,9 +131,15 @@
         min-width: 100%;
         height: 400px;
     }
-  }
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-back {
+    margin-bottom: 30px;
+}
 //     transform: rotateY(180deg);
 //   }
-
-
-

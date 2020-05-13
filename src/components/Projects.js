@@ -20,7 +20,6 @@ class Projects extends React.Component {
     constructor() {
         super();
         this.state = {
-        
          isFlipped1: false,
          isFlipped2: false,
          isFlipped3: false
@@ -47,19 +46,22 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="projects-container">
                 <Header2 />
                 <div className='card-container'>
                     <div className='card-body'>
                         <ReactCardFlip isFlipped={this.state.isFlipped1} flipDirection="horizontal">
                             <CardFront 
                                 id= "1"
-                                textleft="Project"
+                                textleft="Awesome Profile Cards"
                                 textright="1#"
+                                textcontent="Digital Card Generator is a project made with React Js , starting from Vanila Javascript legacy code and using twitter's Rest API. We can customize the look of the card, filling in the data through a form and including dark mode."
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id ="1"
                                 title="Awesome Profile Cards"
+                                code="http://beta.adalab.es/project-promo-i-module-3-team-1-new/#/"
+                                website="http://beta.adalab.es/project-promo-i-module-3-team-1-new/#/"
                                 handleClick={this.handleClick}
                                 img = {awesome}
                             />
@@ -75,6 +77,7 @@ class Projects extends React.Component {
                                 id="2"
                                 title="Rick & Morty"
                                 handleClick={this.handleClick}
+                                img = {awesome}
                             />
 
                         </ReactCardFlip>
