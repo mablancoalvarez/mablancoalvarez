@@ -5,6 +5,7 @@ import CardFront from './CardFront';
 import CardBack from './CardBack';
 import awesome from '../images/awesome.png';
 import project2 from '../images/project2.png';
+import project3 from '../images/project3.png';
 
 
 // const Projects = () => {
@@ -74,25 +75,32 @@ class Projects extends React.Component {
                                 id= "2"
                                 textleft="2#"
                                 textright="Rick & Morty"
+                                textcontent="Responsive web developed with React js, CSS3 & Sass. I access the data info trought an API Rest. Rick & Morty is a project where you can find a specific character or filter by type , furthermore you can more details of each character in a new website route"
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id="2"
                                 title="Project"
                                 handleClick={this.handleClick}
                                 img = {project2}
+                                code ='https://github.com/mablancoalvarez/modulo-3-evaluacion-final-mablancoalvarez'
+                                website='http://beta.adalab.es/modulo-3-evaluacion-final-mablancoalvarez/#/'
                             />
 
                         </ReactCardFlip>
                         <ReactCardFlip isFlipped={this.state.isFlipped3} flipDirection="horizontal">
                             <CardFront
                                 id= "3"
-                                textleft="Project"
-                                textright="3#"
+                                textleft="3#"
+                                textright="Tv Show"
+                                textcontent="Responsive web developed with React js, CSS3 & Sass. I access the data info trought an API Rest. Rick & Morty is a project where you can find a specific character or filter by type , furthermore you can more details of each character in a new website route"
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id="3"
                                 title="ShowTv"
                                 handleClick={this.handleClick}
+                                img = {project3}
+                                code ='https://github.com/mablancoalvarez/modulo-2-evaluacion-final-mablancoalvarez'
+                                website='http://beta.adalab.es/modulo-2-evaluacion-final-mablancoalvarez/?input=game'
                             />
 
                         </ReactCardFlip>
