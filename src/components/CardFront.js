@@ -9,7 +9,7 @@ const CardFront = (props) => {
     }
     return (
 
-        <div className='card-side side-front' >
+        // <div className='card-side side-front' >
             <div className='container-fluid'>
                 <div className='col-xs-6 side-front-content'>
                     <div className="front-text">
@@ -31,7 +31,7 @@ const CardFront = (props) => {
 
 
 
-        </div>
+        // </div>
 
 
     )

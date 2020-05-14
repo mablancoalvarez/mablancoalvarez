@@ -18,94 +18,92 @@
         // height: 420px;
         perspective: 1000px;
         font-family: "Asap";
-    
-.card-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 540px;
-    @include forTablet {
-        display: flex;
-        flex-direction: column;
-    }
-}
-.react-card-flip {
-    min-height: 150px;
+        .card-body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 540px;
+            @include forTablet {
+                display: flex;
+                flex-direction: column;
+            }
 
-    @include forTablet {
-        min-height: 600px;
-    }
-}
+            .react-card-flip {
+                min-height: 150px;
 
+                @include forTablet {
+                    min-height: 600px;
+                }
+            }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            
+            /*- Front side -*/ 
+            // .col {
+            //     margin-bottom: 30px;
+            // }
+            .react-card-front {
+                padding-top: 32px;
+                .side-front [class^="col-xs"]:first-of-type {
+                    padding-left: 0;
+                }
+                // .side-front-content {
+                //     padding-top: 32px;
+                // }
+                .right {
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae;
 
-.col {
-    margin-bottom: 30px;
-}
+                    p.text-center {
+                        font-weight: 600;
+                        font-family: "Asap" !important;
+                        text-align: center !important;
+                        display: inline-block;
+                        align-content: center;
+                        padding: 8px;
+                        border-left: 3px solid #daf11e;
+                        border-right: 3px solid #ffb021;
+                    }
+                }
+            }
 
-/*- Front side -*/
-.react-card-front {
-    .side-front [class^="col-xs"]:first-of-type {
-        padding-left: 0;
-    }
+            /*- Back side -*/
+            .react-card-back {
+                .row {
+                    margin-bottom: 30px;
+                }
+                .side-back {
+                    z-index: 2;
+                    text-align: center;
+                    width: 100%;
 
-    .side-front-content {
-        padding-top: 32px;
-    }
-    .right {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 2rem;
-        text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae;
+                    // .text-into {
+                    //     position: absolute;
+                    //     top: 25%;
+                    //     left: 50%;
+                    //     font-size: 0.9rem;
+                    //     transform: translate(-50%, -50%);
+                    // }
+                    // .img {
+                    //     min-width: 100%;
+                    //     max-height: 400px;
+                    // }
+                }
+            }
 
-        p.text-center {
-            font-weight: 600;
-            font-family: "Asap" !important;
-            text-align: center !important;
-            display: inline-block;
-            align-content: center;
-            padding: 8px;
+            .icons {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
 
-            border-left: 3px solid #ea36af;
-            border-right: 3px solid #43f6ae;
+            .btn-back {
+                margin-bottom: 30px;
+            }
         }
     }
-}
-
-/*- Back side -*/
-.react-card-front {
-    .row {
-        margin-bottom: 30px;
-    }
-    .side-back {
-        z-index: 2;
-        text-align: center;
-        width: 100%;
-
-        .text-into {
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            font-size: 0.9rem;
-            transform: translate(-50%, -50%);
-        }
-        // .img {
-        //     min-width: 100%;
-        //     max-height: 400px;
-        // }
-    }
-}
-.icons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.btn-back {
-    margin-bottom: 30px;
-}
-}
 }
