@@ -24,7 +24,8 @@ const CardFront = (props) => {
 
                      <div className='col-xs-6 side-front-content'>
                         <p className="text-content">{props.textcontent}</p>
-                        <button id ={props.id} onClick={handleClick}> Take a Look</button>
+                        <button  className="btn draw-border" id ={props.id} onClick={handleClick}> Take a Look</button>
+                        
                     </div>
                 </div>
             </div>
