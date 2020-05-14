@@ -1,14 +1,29 @@
-
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
-.aboutme-container{
+.aboutme-container {
     background-image: url(../../images/bg.png);
     background-position: center center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
     background-attachment: fixed;
+    .img-container {
+        margin-top:40px;
+        text-align: center;
+        .img-profile {
+            max-width: 150px;
+            max-height: 150px;
+            @include forTablet {
+                max-width: 250px;
+                max-height: 250px;
+            }
+                @include forPc {
+                    max-width: 350px;
+                    max-height: 350px;
+        }
+    }
+}
 }
