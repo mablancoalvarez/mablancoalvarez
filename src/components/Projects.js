@@ -4,6 +4,7 @@ import ReactCardFlip from 'react-card-flip';
 import CardFront from './CardFront';
 import CardBack from './CardBack';
 import awesome from '../images/awesome.png';
+import project2 from '../images/project2.png';
 
 
 // const Projects = () => {
@@ -71,14 +72,14 @@ class Projects extends React.Component {
                         <ReactCardFlip isFlipped={this.state.isFlipped2} flipDirection="horizontal">
                             <CardFront
                                 id= "2"
-                                textleft="Project"
-                                textright="2#"
+                                textleft="2#"
+                                textright="Rick & Morty"
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id="2"
-                                title="Rick & Morty"
+                                title="Project"
                                 handleClick={this.handleClick}
-                                img = {awesome}
+                                img = {project2}
                             />
 
                         </ReactCardFlip>
