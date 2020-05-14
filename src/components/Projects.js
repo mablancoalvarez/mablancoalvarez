@@ -111,7 +111,7 @@ class Projects extends React.Component {
                                 id= "4"
                                 textleft="4#"
                                 textright="Collapsing Margins"
-                                textcontent="The goal was to create a responsive website with information about our team and ourselves individually, according to the client needs, and it features a main page and a second page with a functional contact form.  Website was done using HTLM5 ,CSS3 & SASS and Gulp."
+                                textcontent="The goal was to create a responsive website with information about our team, according to the client needs, and it features a main page and a second page with a functional contact form.  Website was done using HTLM5 ,CSS3 & SASS and Gulp."
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id="4"
