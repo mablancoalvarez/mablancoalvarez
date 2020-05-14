@@ -1,0 +1,14 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.aboutme-container{
+    background-image: url(../../images/bg.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+}
