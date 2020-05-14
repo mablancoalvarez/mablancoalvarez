@@ -6,6 +6,7 @@ import CardBack from './CardBack';
 import awesome from '../images/awesome.png';
 import project2 from '../images/project2.png';
 import project3 from '../images/project3.png';
+import project4 from '../images/project4.png';
 
 
 // const Projects = () => {
@@ -24,7 +25,8 @@ class Projects extends React.Component {
         this.state = {
          isFlipped1: false,
          isFlipped2: false,
-         isFlipped3: false
+         isFlipped3: false,
+         isFlipped4: false
 
         };
         this.handleClick = this.handleClick.bind(this);
@@ -40,8 +42,11 @@ class Projects extends React.Component {
       else if ( id === "2"){
         key = "isFlipped2";
       }
-      else  
+      else if ( id === "3"){
         key = "isFlipped3";
+      }
+      else  
+        key = "isFlipped4";
       
         this.setState(prevState => ({ [key]: !prevState[key] }));
     }
@@ -62,7 +67,6 @@ class Projects extends React.Component {
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id ="1"
-                                title="Awesome Profile Cards"
                                 code="http://beta.adalab.es/project-promo-i-module-3-team-1-new/#/"
                                 website="http://beta.adalab.es/project-promo-i-module-3-team-1-new/#/"
                                 handleClick={this.handleClick}
@@ -75,11 +79,10 @@ class Projects extends React.Component {
                                 id= "2"
                                 textleft="2#"
                                 textright="Rick & Morty"
-                                textcontent="Responsive web developed with React js, CSS3 & Sass. I access the data info trought an API Rest. Rick & Morty is a project where you can find a specific character or filter by type , furthermore you can more details of each character in a new website route"
+                                textcontent="Responsive web developed with React js, CSS3 & Sass. I access the data info trought an API Rest. Rick & Morty is a project where you can find a specific character or filter by type , furthermore you can more details of each character in a new website route."
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id="2"
-                                title="Project"
                                 handleClick={this.handleClick}
                                 img = {project2}
                                 code ='https://github.com/mablancoalvarez/modulo-3-evaluacion-final-mablancoalvarez'
@@ -92,15 +95,30 @@ class Projects extends React.Component {
                                 id= "3"
                                 textleft="3#"
                                 textright="Tv Show"
-                                textcontent="Responsive web developed with React js, CSS3 & Sass. I access the data info trought an API Rest. Rick & Morty is a project where you can find a specific character or filter by type , furthermore you can more details of each character in a new website route"
+                                textcontent="TV Browser developed with Vainilla Javascript, HTML5,CSS3 & SASS technology and API REST. You can search a Tv Show and you could save in a favorite list list, in addition you can refresh the website without lost your searches. "
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id="3"
-                                title="ShowTv"
                                 handleClick={this.handleClick}
                                 img = {project3}
                                 code ='https://github.com/mablancoalvarez/modulo-2-evaluacion-final-mablancoalvarez'
                                 website='http://beta.adalab.es/modulo-2-evaluacion-final-mablancoalvarez/?input=game'
+                            />
+
+                        </ReactCardFlip>
+                        <ReactCardFlip isFlipped={this.state.isFlipped4} flipDirection="horizontal">
+                            <CardFront
+                                id= "4"
+                                textleft="4#"
+                                textright="Collapsing Margins"
+                                textcontent="The goal was to create a responsive website with information about our team and ourselves individually, according to the client needs, and it features a main page and a second page with a functional contact form.  Website was done using HTLM5 ,CSS3 & SASS and Gulp."
+                                handleClick={this.handleClick} />
+                            <CardBack
+                                id="4"
+                                handleClick={this.handleClick}
+                                img = {project4}
+                                code ='https://github.com/mablancoalvarez/project-promo-i-module-1-team-3-afternoon-final'
+                                website='http://beta.adalab.es/project-promo-i-module-1-team-3-afternoon-final/'
                             />
 
                         </ReactCardFlip>

@@ -21,37 +21,31 @@
         .card-body {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 540px;
+            grid-template-rows: 400px 400px 400px 400px;
             @include forTablet {
                 display: flex;
                 flex-direction: column;
             }
-
             .react-card-flip {
+                margin-top: 20px;
                 min-height: 150px;
 
                 @include forTablet {
                     min-height: 600px;
                 }
             }
-
             img {
                 max-width: 100%;
                 max-height: 100%;
             }
 
-            /*- Front side -*/
-            // .col {
-            //     margin-bottom: 30px;
-            // }
+        
             .react-card-front {
                 padding-top: 32px;
                 .side-front [class^="col-xs"]:first-of-type {
                     padding-left: 0;
                 }
-                // .side-front-content {
-                //     padding-top: 32px;
-                // }
+            
                 .right {
                     text-align: center;
                     text-transform: uppercase;
@@ -80,18 +74,6 @@
                     z-index: 2;
                     text-align: center;
                     width: 100%;
-
-                    // .text-into {
-                    //     position: absolute;
-                    //     top: 25%;
-                    //     left: 50%;
-                    //     font-size: 0.9rem;
-                    //     transform: translate(-50%, -50%);
-                    // }
-                    // .img {
-                    //     min-width: 100%;
-                    //     max-height: 400px;
-                    // }
                 }
             }
             .icons {
@@ -112,70 +94,82 @@
         }
     }
 }
-             
-@mixin btn-border-drawing($color:#ff19ad , $hover: yellow, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+
+@mixin btn-border-drawing(
+    $color: #ff19ad,
+    $hover: yellow,
+    $width: 2px,
+    $vertical: top,
+    $horizontal: left,
+    $duration: 0.25s
+) {
     box-shadow: inset 0 0 0 $width $color;
     color: $color !important;
-    transition: color $duration $duration/3!important;
+    transition: color $duration $duration/3 !important;
     position: relative;
-    
+
     &::before,
     &::after {
-      border: 0 solid transparent;
-      box-sizing: border-box;
-      content: '';
-      pointer-events: none;
-      position: absolute;
-      width: 0; height: 0;
-      
-      #{$vertical}: 0; 
-      #{$horizontal}: 0;
+        border: 0 solid transparent;
+        box-sizing: border-box;
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+
+        #{$vertical}: 0;
+        #{$horizontal}: 0;
     }
-  
+
     &::before {
-      $h-side: if($horizontal == 'left', 'right', 'left');
-      
-      border-#{$vertical}-width: $width;
-      border-#{$h-side}-width: $width;
+        $h-side: if($horizontal == "left", "right", "left");
+
+        border-#{$vertical}-width: $width;
+        border-#{$h-side}-width: $width;
     }
-    
+
     &::after {
-      $v-side: if($vertical == 'top', 'bottom', 'top');
-      
-      border-#{$v-side}-width: $width;
-      border-#{$horizontal}-width: $width;
+        $v-side: if($vertical == "top", "bottom", "top");
+
+        border-#{$v-side}-width: $width;
+        border-#{$horizontal}-width: $width;
     }
-    
+
     &:hover {
-      color: #ffe593;
-      
-      &::before,
-      &::after {
-        border-color: $hover;
-        transition: border-color 0s, width $duration, height $duration;
-        width: 100%;
-        height: 100%;
-      }
-      
-      &::before { transition-delay: 0s, 0s, $duration; }
-      
-      &::after { transition-delay: 0s, $duration, 0s; }
+        color: #ffe593;
+
+        &::before,
+        &::after {
+            border-color: $hover;
+            transition: border-color 0s, width $duration, height $duration;
+            width: 100%;
+            height: 100%;
+        }
+
+        &::before {
+            transition-delay: 0s, 0s, $duration;
+        }
+
+        &::after {
+            transition-delay: 0s, $duration, 0s;
+        }
     }
-  }
-  
-  .draw-border {
+}
+
+.draw-border {
     @include btn-border-drawing(#ff19ad, #ffe593, 4px, bottom, right);
-  }
-  
-  //=== Button styling, semi-ignore
-  .btn {
+}
+
+.btn {
     background: none;
     border: none;
     cursor: pointer;
     line-height: 1.5;
     padding: 1em 2em;
     letter-spacing: 0.05rem;
-    
-    &:focus { outline: 2px dotted #ff19ad; }
-  }
-  
+
+    &:focus {
+        outline: 2px dotted #ff19ad;
+    }
+}
