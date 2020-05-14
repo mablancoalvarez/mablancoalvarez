@@ -9,121 +9,42 @@
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-}
+
+    .card-container {
+        position: relative;
+        z-index: 1;
+        margin: 32px auto;
+        max-width: 720px;
+        // height: 420px;
+        perspective: 1000px;
+        font-family: "Asap";
+    
 .card-body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 440px;
+    grid-template-rows: 540px;
     @include forTablet {
         display: flex;
         flex-direction: column;
     }
 }
 .react-card-flip {
-    min-height: 150px !important;
+    min-height: 150px;
 
     @include forTablet {
-        min-height: 600px !important;
+        min-height: 600px;
     }
 }
-.card-container {
-    position: relative;
-    z-index: 1;
-    margin: 32px auto;
-    max-width: 720px;
-    // height: 420px;
-    perspective: 1000px;
-    font-family: "Asap" !important;
-}
+
 
 img {
     max-width: 100%;
     max-height: 100%;
 }
 
-// .col {
-
-//     margin-bottom: 30px;
-
-// .front-text {
-//     font-family: "Asap" !important;
-//     display: flex;
-//     min-width: 100%;
-//     max-height: 230px;
-//     @include forTablet {
-//         min-height: 390px;
-//        min-width: 100%;
-//     }
-
-//     .text-center{
-//         text-align: center;
-//         font-size: 2.5rem;
-//         text-transform: uppercase;
-//         margin-top: 20%;
-//         border-left: 3px solid #ea36af;
-//         border-right: 3px solid #75fa69;
-//         @include forTablet {
-//            font-size: 4rem;
-
-//         }
-//     }
-//     h2 {
-//         font-size: 3rem;
-//         text-align: center;
-//         margin-top: 40% !important;
-
-//         @include forTablet {
-//         font-size: 6rem;
-//         margin-top:55% !important;
-//         }
-
-//     }
-
-//     .left {
-//         background-color: #2fffc5;
-//          border-radius: 5px !important;
-//     }
-
-//     .right {
-//         width: 60%;
-//     }
-//     .left {
-//         width: 40%;
-//     }
-// }
-// }
-
-/*- Card body -*/
-//   .card-body {
-//     width: 100%;
-//     height: 100%;
-//     transform-style: preserve-3d;
-//     transition: all .7s linear;
-//   }
-
-//   /*- Flipping the card -*/
-//   .card-container:hover .card-body {
-//     transform: rotateY(180deg);
-//   }
-
-//   .card-container:hover > .card-body > .side-front {
-//     opacity: 0;
-//     visibility: hidden;
-//     transition: opacity 1s ease-in, visibility .75s linear;
-//   }
-
-//   /*- Card sides -*/
-//   .card-side {
-//     position: absolute;
-//     top: 0;
-//     overflow: hidden;
-//     width: 100%;
-//     height: 100%;
-//     color: #212121;
-//     background-color: #fff;
-//     backface-visibility: hidden;
-//     box-shadow: 0 10px 35px rgba(50,50,93,.1),0 2px 15px rgba(0,0,0,.07);
-//   }
+.col {
+    margin-bottom: 30px;
+}
 
 /*- Front side -*/
 .react-card-front {
@@ -134,31 +55,33 @@ img {
     .side-front-content {
         padding-top: 32px;
     }
-.right{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2rem;
-  
+    .right {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae;
 
-   p.text-center {
-        font-weight: 600;
-        font-family: "Asap" !important;
-        text-align: center!important;
-        display: inline-block;
-        align-content: center;
-        padding: 8px;
-      
-        border-left: 3px solid #ea36af;
-        border-right: 3px solid #43f6ae;
+        p.text-center {
+            font-weight: 600;
+            font-family: "Asap" !important;
+            text-align: center !important;
+            display: inline-block;
+            align-content: center;
+            padding: 8px;
+
+            border-left: 3px solid #ea36af;
+            border-right: 3px solid #43f6ae;
+        }
     }
-}
 }
 
 /*- Back side -*/
 .react-card-front {
+    .row {
+        margin-bottom: 30px;
+    }
     .side-back {
         z-index: 2;
-        // padding: 32px;
         text-align: center;
         width: 100%;
 
@@ -169,10 +92,10 @@ img {
             font-size: 0.9rem;
             transform: translate(-50%, -50%);
         }
-        .img {
-            min-width: 100%;
-            height: 400px;
-        }
+        // .img {
+        //     min-width: 100%;
+        //     max-height: 400px;
+        // }
     }
 }
 .icons {
@@ -184,5 +107,5 @@ img {
 .btn-back {
     margin-bottom: 30px;
 }
-//     transform: rotateY(180deg);
-//   }
+}
+}

@@ -14,7 +14,7 @@ const CardFront = (props) => {
                 <div className='col-xs-6 side-front-content'>
                     <div className="front-text">
                         <div className="left">
-                            <div className="solid" style={props.style}><h2 className="text-center">{props.textleft}</h2>
+                            <div className="solid"><h2 className="text-center">{props.textleft}</h2>
                             </div>
                         </div>
                         <div className="right">
@@ -23,10 +23,6 @@ const CardFront = (props) => {
                     </div>
 
                      <div className='col-xs-6 side-front-content'>
-                        {/* /* <h2>Czech based</h2>
-
-                        <h1>UI/UX Designer</h1>  */}
-
                         <p className="text-content">{props.textcontent}</p>
                         <button id ={props.id} onClick={handleClick}> Take a Look</button>
                     </div>
