@@ -40,8 +40,8 @@
         .card-front {
             margin-top: 70px;
             margin-bottom: 50px;
-            max-width: 720px;
-            min-height: 550px;
+            // max-width: 720px;
+            // min-height: 550px;
             .container_text {
                 text-align: center;
             }
@@ -82,19 +82,28 @@
         
             // margin-top: 70px;
             margin-top: 70px;
+            @include forTablet {
+                max-width: 550px;
+                max-height: 550px;
+            }
+            @include forPc {
+                max-width: 720px;
+                max-height: 550px;
+            }
             .image {
           
                 max-width: 350px;
                 max-height: 350px;
-
                 @include forTablet {
                     max-width: 550px;
                     max-height: 550px;
                 }
                 @include forPc {
-                max-width: 720px;
-                max-height: 550px;
-            }
+                    max-width: 720px;
+                    max-height: 550px;
+                }
+
+               
         }
             .icons {
                 display: flex;
