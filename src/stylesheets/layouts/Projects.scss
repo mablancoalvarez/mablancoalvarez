@@ -7,7 +7,7 @@
 .projects-container {
     background-image: url(../../images/bg.png);
     background-position: center center;
-    background-size: cover;
+    background-size:contain;
     background-repeat: repeat;
     // width: 100vw;
     // height: 100vh;
@@ -62,7 +62,7 @@
                 padding: 8px;
                 border-left: 3px solid #daf11e;
                 border-right: 3px solid #ffb021;
-                text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae;
+                text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae !important;
                 @include forTablet {
                     font-size: 2rem;
             }
