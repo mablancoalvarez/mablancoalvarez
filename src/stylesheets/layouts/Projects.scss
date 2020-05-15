@@ -8,77 +8,98 @@
     background-image: url(../../images/bg.png);
     background-position: center center;
     background-size: cover;
+    background-repeat: repeat;
+    // width: 100vw;
+    // height: 100vh;
     background-attachment: fixed;
 
-    .card-container {
-        position: relative;
-        z-index: 1;
-        margin: 32px auto;
-        max-width: 720px;
-        // height: 420px;
-        perspective: 1000px;
-        font-family: "Asap";
-        .card-body {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 400px 400px 400px 450px;
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Asap", sans-serif;
+
+        .react-card-flip {
+            width: 100%;
+            min-height: 350px;
+
             @include forTablet {
-                display: flex;
-                flex-direction: column;
+           
+                max-width: 600px;
+                min-height: 550px;
+                
             }
-            .react-card-flip {
-                margin-top: 20px;
-                min-height: 150px;
+
+            @include forPc {
+           
+                max-width: 720px;
+                min-height: 550px;
+            }
+        }
+
+        .card-front {
+            margin-top: 70px;
+            margin-bottom: 50px;
+            max-width: 720px;
+            min-height: 550px;
+            .container_text {
+                text-align: center;
+            }
+            .number {
+                font-size: 1.4rem;
+                @include forTablet {
+                font-size: 2.5rem;
+                margin: 0px;
+                }
+            }
+            .title {
+
+
+                margin-top: 0px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.4rem;
+                display: inline-block;
+                align-content: center;
+                padding: 8px;
+                border-left: 3px solid #daf11e;
+                border-right: 3px solid #ffb021;
+                text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae;
+                @include forTablet {
+                    font-size: 2rem;
+            }
+        }
+            .text-content {
+                font-size: 0.8rem;
+             
+                @include forTablet {
+                    font-size: 1rem;
+                    
+                }
+            }
+        }
+        .card-back {
+        
+            // margin-top: 70px;
+            margin-top: 70px;
+            .image {
+          
+                max-width: 350px;
+                max-height: 350px;
 
                 @include forTablet {
-                    min-height: 600px;
+                    max-width: 550px;
+                    max-height: 550px;
                 }
+                @include forPc {
+                max-width: 720px;
+                max-height: 550px;
             }
-            img {
-                max-width: 100%;
-                max-height: 100%;
-            }
-
-            .react-card-front {
-                padding-top: 32px;
-                .side-front [class^="col-xs"]:first-of-type {
-                    padding-left: 0;
-                }
-                .right {
-                    text-align: center;
-                    text-transform: uppercase;
-                    font-size: 2rem;
-                    text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae;
-
-                    p.text-center {
-                        font-weight: 600;
-                        font-family: "Asap" !important;
-                        text-align: center !important;
-                        display: inline-block;
-                        align-content: center;
-                        padding: 8px;
-                        border-left: 3px solid #daf11e;
-                        border-right: 3px solid #ffb021;
-                    }
-                }
-            }
-
-            /*- Back side -*/
-            .react-card-back {
-                .row {
-                    margin-bottom: 30px;
-                }
-                .side-back {
-                    z-index: 2;
-                    text-align: center;
-                    width: 100%;
-                }
-            }
+        }
             .icons {
                 display: flex;
                 justify-content: space-between;
                 margin-top: 30px;
-
                 .fas.fa-angle-left {
                     font-size: 1.8rem;
                     color: #ff1dad;
@@ -90,84 +111,254 @@
                 }
             }
         }
-    }
-}
 
-@mixin btn-border-drawing(
-    $color: #ff19ad,
-    $hover: yellow,
-    $width: 2px,
-    $vertical: top,
-    $horizontal: left,
-    $duration: 0.25s
-) {
-    box-shadow: inset 0 0 0 $width $color;
-    color: $color !important;
-    transition: color $duration $duration/3 !important;
-    position: relative;
+        @mixin btn-border-drawing(
+            $color: #ff19ad,
+            $hover: yellow,
+            $width: 2px,
+            $vertical: top,
+            $horizontal: left,
+            $duration: 0.25s
+        ) {
+            box-shadow: inset 0 0 0 $width $color;
+            color: $color !important;
+            transition: color $duration $duration/3 !important;
+            position: relative;
 
-    &::before,
-    &::after {
-        border: 0 solid transparent;
-        box-sizing: border-box;
-        content: "";
-        pointer-events: none;
-        position: absolute;
-        width: 0;
-        height: 0;
+            &::before,
+            &::after {
+                border: 0 solid transparent;
+                box-sizing: border-box;
+                content: "";
+                pointer-events: none;
+                position: absolute;
+                width: 0;
+                height: 0;
 
-        #{$vertical}: 0;
-        #{$horizontal}: 0;
-    }
+                #{$vertical}: 0;
+                #{$horizontal}: 0;
+            }
 
-    &::before {
-        $h-side: if($horizontal == "left", "right", "left");
+            &::before {
+                $h-side: if($horizontal == "left", "right", "left");
 
-        border-#{$vertical}-width: $width;
-        border-#{$h-side}-width: $width;
-    }
+                border-#{$vertical}-width: $width;
+                border-#{$h-side}-width: $width;
+            }
 
-    &::after {
-        $v-side: if($vertical == "top", "bottom", "top");
+            &::after {
+                $v-side: if($vertical == "top", "bottom", "top");
 
-        border-#{$v-side}-width: $width;
-        border-#{$horizontal}-width: $width;
-    }
+                border-#{$v-side}-width: $width;
+                border-#{$horizontal}-width: $width;
+            }
 
-    &:hover {
-        color: #ffe593;
+            &:hover {
+                color: #ffe593;
 
-        &::before,
-        &::after {
-            border-color: $hover;
-            transition: border-color 0s, width $duration, height $duration;
-            width: 100%;
-            height: 100%;
+                &::before,
+                &::after {
+                    border-color: $hover;
+                    transition: border-color 0s, width $duration, height $duration;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &::before {
+                    transition-delay: 0s, 0s, $duration;
+                }
+
+                &::after {
+                    transition-delay: 0s, $duration, 0s;
+                }
+            }
         }
 
-        &::before {
-            transition-delay: 0s, 0s, $duration;
+        .draw-border {
+            @include btn-border-drawing(#ff19ad, #ffe593, 4px, bottom, right);
         }
 
-        &::after {
-            transition-delay: 0s, $duration, 0s;
+        .btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            line-height: 1.5;
+            padding: 0.5rem;
+            letter-spacing: 0.05rem;
+
+            @include forTablet{
+                padding: 1em 2em;
+            }
+           
+        
+
+            &:focus {
+                outline: 2px dotted #ff19ad;
+            }
         }
     }
 }
 
-.draw-border {
-    @include btn-border-drawing(#ff19ad, #ffe593, 4px, bottom, right);
-}
+//     background-attachment: fixed;
+// }
+//     .card-container {
+//         position: relative;
+//         z-index: 1;
+//         margin: 32px auto;
+//         max-width: 720px;
+//         // height: 420px;
+//         perspective: 1000px;
+//         font-family: "Asap";
+//         .card-body {
+//             display: grid;
+//             grid-template-columns: 1fr;
+//             grid-template-rows: 400px 400px 400px 450px;
+//             @include forTablet {
+//                 display: flex;
+//                 flex-direction: column;
+//             }
+//             .react-card-flip {
+//                 margin-top: 20px;
+//                 min-height: 150px;
 
-.btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    line-height: 1.5;
-    padding: 1em 2em;
-    letter-spacing: 0.05rem;
+//                 @include forTablet {
+//                     min-height: 600px;
+//                 }
+//             }
+//             img {
+//                 max-width: 100%;
+//                 max-height: 100%;
+//             }
 
-    &:focus {
-        outline: 2px dotted #ff19ad;
-    }
-}
+//             .react-card-front {
+//                 padding-top: 32px;
+//                 .side-front [class^="col-xs"]:first-of-type {
+//                     padding-left: 0;
+//                 }
+//                 .right {
+//                     text-align: center;
+//                     text-transform: uppercase;
+//                     font-size: 2rem;
+//                     text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae;
+
+//                     p.text-center {
+//                         font-weight: 600;
+//                         font-family: "Asap" !important;
+//                         text-align: center !important;
+//                         display: inline-block;
+//                         align-content: center;
+//                         padding: 8px;
+//                         border-left: 3px solid #daf11e;
+//                         border-right: 3px solid #ffb021;
+//                     }
+//                 }
+//             }
+
+//             /*- Back side -*/
+//             .react-card-back {
+//                 .row {
+//                     margin-bottom: 30px;
+//                 }
+//                 .side-back {
+//                     z-index: 2;
+//                     text-align: center;
+//                     width: 100%;
+//                 }
+//             }
+//             .icons {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 margin-top: 30px;
+
+//                 .fas.fa-angle-left {
+//                     font-size: 1.8rem;
+//                     color: #ff1dad;
+//                     cursor: pointer;
+//                 }
+//                 a {
+//                     color: #ff19ad;
+//                     text-decoration: none;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @mixin btn-border-drawing(
+//     $color: #ff19ad,
+//     $hover: yellow,
+//     $width: 2px,
+//     $vertical: top,
+//     $horizontal: left,
+//     $duration: 0.25s
+// ) {
+//     box-shadow: inset 0 0 0 $width $color;
+//     color: $color !important;
+//     transition: color $duration $duration/3 !important;
+//     position: relative;
+
+//     &::before,
+//     &::after {
+//         border: 0 solid transparent;
+//         box-sizing: border-box;
+//         content: "";
+//         pointer-events: none;
+//         position: absolute;
+//         width: 0;
+//         height: 0;
+
+//         #{$vertical}: 0;
+//         #{$horizontal}: 0;
+//     }
+
+//     &::before {
+//         $h-side: if($horizontal == "left", "right", "left");
+
+//         border-#{$vertical}-width: $width;
+//         border-#{$h-side}-width: $width;
+//     }
+
+//     &::after {
+//         $v-side: if($vertical == "top", "bottom", "top");
+
+//         border-#{$v-side}-width: $width;
+//         border-#{$horizontal}-width: $width;
+//     }
+
+//     &:hover {
+//         color: #ffe593;
+
+//         &::before,
+//         &::after {
+//             border-color: $hover;
+//             transition: border-color 0s, width $duration, height $duration;
+//             width: 100%;
+//             height: 100%;
+//         }
+
+//         &::before {
+//             transition-delay: 0s, 0s, $duration;
+//         }
+
+//         &::after {
+//             transition-delay: 0s, $duration, 0s;
+//         }
+//     }
+// }
+
+// .draw-border {
+//     @include btn-border-drawing(#ff19ad, #ffe593, 4px, bottom, right);
+// }
+
+// .btn {
+//     background: none;
+//     border: none;
+//     cursor: pointer;
+//     line-height: 1.5;
+//     padding: 1em 2em;
+//     letter-spacing: 0.05rem;
+
+//     &:focus {
+//         outline: 2px dotted #ff19ad;
+//     }
+// }

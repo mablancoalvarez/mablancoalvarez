@@ -9,16 +9,7 @@ import project3 from '../images/project3.png';
 import project4 from '../images/project4.png';
 
 
-// const Projects = () => {
 
-//     return(
-//         <div>
-//             <Header2 />
-//             <h1>Projects</h1>
-
-//         </div>
-//     )
-// }
 class Projects extends React.Component {
     constructor() {
         super();
