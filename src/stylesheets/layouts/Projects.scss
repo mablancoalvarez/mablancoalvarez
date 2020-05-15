@@ -53,8 +53,6 @@
                 }
             }
             .title {
-
-
                 margin-top: 0px;
                 text-transform: uppercase;
                 font-weight: 600;
@@ -90,10 +88,16 @@
                 max-width: 720px;
                 max-height: 550px;
             }
+
+            .img-container{
+
+                max-width: 350px;
+                max-height: 450px;
+
             .image {
           
                 max-width: 350px;
-                max-height: 350px;
+                max-height: 450px;
                 @include forTablet {
                     max-width: 550px;
                     max-height: 550px;
@@ -103,12 +107,16 @@
                     max-height: 550px;
                 }
 
-               
+            }
         }
             .icons {
+                
                 display: flex;
                 justify-content: space-between;
                 margin-top: 30px;
+                @include forPc {
+                    margin-top: 79px
+                    }
                 .fas.fa-angle-left {
                     font-size: 1.8rem;
                     color: #ff1dad;
