@@ -1,6 +1,5 @@
 import React from 'react';
 import '../stylesheets/App.scss';
-
 import Home from './Home';
 import { Route, Switch } from 'react-router-dom';
 import Aboutme from './Aboutme';
@@ -16,12 +15,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App"> 
+      <div className="App">
         <Switch>
           <Route exact path="/">
-
             <Home></Home>
-
           </Route>
           <Route exact path="/Aboutme">
             <Aboutme />
@@ -35,7 +32,7 @@ class App extends React.Component {
         </Switch>
         <Footer/>
       </div>
-     
+
     );
   }
 }

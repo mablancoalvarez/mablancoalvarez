@@ -1,7 +1,7 @@
 .content {
     text-transform: uppercase;
     position: absolute;
-    top: 25%;
+    top: 32%;
     left: 50%;
     font-size: 0.9rem;
     transform: translate(-50%, -50%);
@@ -12,6 +12,7 @@
    
     @include forTablet{
     font-size: 1.5rem;
+    top: 25%;
 
 
     }

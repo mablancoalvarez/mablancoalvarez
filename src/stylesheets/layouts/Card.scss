@@ -3,26 +3,34 @@
 }
 
 .cardOne {
-  width: 315px;  
+  width: 315px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
   z-index: 3;
-  left: 20%;
-  animation-name:cardOne;
+  
+  animation-name: cardOne;
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+  @include forTablet {
+    left: 27%;}
+    @include forPc {
+      left: 32%;
+  }
 }
+
 
 .topOne1 {
-  top: 650px;      
+  top: 450px;
+  @include forTablet {
+    top: 650px;
+  }
 }
 .topOne2 {
-  top: 850px;      
+  top: 850px;
 }
-
 
 .cardOne img {
   border: 3px solid #f0ff54;
@@ -33,7 +41,7 @@
 .cardOne div {
   width: 220px;
   height: 50px;
-  background-color: white;  
+  background-color: white;
   opacity: 0.7;
   clip-path: polygon(10% 0%, 100% 1%, 100% 100%, 10% 100%, 0% 50%);
   border-right: 8px solid #f0ff54;
@@ -42,50 +50,58 @@
   align-items: center;
 }
 
-
 .cardOne p {
-  font-family: 'Asap';
+  font-family: "Asap";
   font-size: 15px;
   padding-left: 10px;
 }
 
 @keyframes cardOne {
   0% {
-      opacity: 0.5;
+    opacity: 0.5;
   }
   50% {
-      opacity: 0.7;
+    opacity: 0.7;
   }
   100% {
-      opacity: 1;
-      transform: translateX(30px);
+    opacity: 1;
+    transform: translateX(30px);
   }
 }
-
 
 // Card2
 
 .cardTwo {
-  width: 315px;  
+  left:22%;
+  width: 315px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
   z-index: 3;
-  top: 650px;  
-  left: 43%;
+  top: 650px;
+
   animation-name: cardTwo;
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+  @include forTablet {
+    left: 46%;
+  }
+  @include forPc {
+    left: 50%;
 }
-
+}
 .topTwo1 {
-  top: 750px;      
+  top: 580px;
+  @include forTablet {
+
+  top: 750px;
+  }
 }
 
 .topTwo2 {
-  top: 1000px;      
+  top: 950px;
 }
 
 .cardTwo img {
@@ -97,9 +113,9 @@
 .cardTwo div {
   width: 220px;
   height: 50px;
-  background-color: white;  
+  background-color: white;
   opacity: 0.7;
-  clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);  
+  clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
   border-left: 8px solid #f0ff54;
   display: flex;
   justify-content: center;
@@ -107,21 +123,20 @@
 }
 
 .cardTwo p {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 15px;
   padding-right: 10px;
 }
 
 @keyframes cardTwo {
   0% {
-      opacity: 0.5;
+    opacity: 0.5;
   }
   50% {
-      opacity: 0.7;
+    opacity: 0.7;
   }
   100% {
-      opacity: 1;
-      transform: translateX(-30px);
+    opacity: 1;
+    transform: translateX(-30px);
   }
 }
-
