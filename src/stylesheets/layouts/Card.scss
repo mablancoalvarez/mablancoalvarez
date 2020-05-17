@@ -3,7 +3,8 @@
 }
 
 .cardOne {
-  width: 315px;
+  left: 4%;
+  width: 225px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,13 +14,15 @@
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+
   @include forTablet {
-    left: 27%;}
-    @include forPc {
-      left: 32%;
+    width: 315px;
+    left: 27%;
+  }
+  @include forPc {
+    left: 32%;
   }
 }
-
 
 .topOne1 {
   top: 450px;
@@ -31,20 +34,29 @@
   }
 }
 .topOne2 {
-  top: 820px;
+  top: 692px;
+  @include forTablet {
+    top: 800px;
+  }
   @include forPc {
     top: 860px;
   }
 }
-.topOne3{
-
-top:1050px;
+.topOne3 {
+  top: 940px;
+  @include forTablet {
+    top: 1034px;
+  }
   @include forPc {
     top: 1080px;
   }
 }
-.topOne4{
-  top:1250px;
+
+.topOne4 {
+  top: 1189px;
+  @include forTablet {
+    top: 1265px;
+  }
   @include forPc {
     top: 1300px;
   }
@@ -66,12 +78,16 @@ top:1050px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include forTablet {
+    height: 70px;
+  }
 }
 
 .cardOne p {
   font-family: "Asap";
   font-size: 15px;
   padding-left: 27px;
+  margin-bottom: 0rem;
 }
 
 @keyframes cardOne {
@@ -90,8 +106,9 @@ top:1050px;
 // Card2
 
 .cardTwo {
-  left:22%;
-  width: 315px;
+  // left:18%;
+  left: 36%;
+  width: 225px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,39 +121,49 @@ top:1050px;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   @include forTablet {
+    width: 315px;
     left: 46%;
   }
   @include forPc {
     left: 50%;
-}
+  }
 }
 .topTwo1 {
-  top: 580px;
+  top: 570px;
   @include forTablet {
-  top: 690px;
+    top: 685px;
   }
   @include forPc {
     top: 750px;
-    }
+  }
 }
 
 .topTwo2 {
-  top: 940px;
+  top: 815px;
+  @include forTablet {
+    top: 920px;
+  }
   @include forPc {
     top: 970px;
-    }
+  }
 }
 .topTwo3 {
-  top: 1150px;
+  top: 1067px;
+  @include forTablet {
+    top: 1150px;
+  }
   @include forPc {
     top: 1190px;
-    }
+  }
 }
 .topTwo4 {
-  top: 1350px;
+  top: 1321px;
+  @include forTablet {
+    top: 1385px;
+  }
   @include forPc {
     top: 1410px;
-    }
+  }
 }
 
 .cardTwo img {
@@ -155,6 +182,9 @@ top:1050px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include forTablet {
+    height: 70px;
+  }
 }
 
 .cardTwo p {

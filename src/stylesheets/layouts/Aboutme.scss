@@ -22,6 +22,26 @@
     overflow-y: scroll;
     background-attachment: fixed;
     font-family: 'Asap';
+
+
+    &__body{
+        padding:1.25rem;
+    
+    &-text{
+        text-align: center;
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae;
+            @include forTablet {
+                font-size: 2rem;
+            }
+        }
+    }
     .img-container {
         margin-top: 40px;
         text-align: center;
@@ -38,20 +58,9 @@
             }
         }
     }
-    .container {
-    text-align: center;
-    
-    h1 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        appearance: none;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae;
-        @include forTablet {
-            font-size: 2rem;
-        }
-    }
+
+} 
 }
-}
+
+
+
