@@ -4,6 +4,7 @@ import profile from '../images/profile.png';
 import Card from '../components/Card';
 import Card2 from '../components/Card2';
 import ContactCard from '../components/ContactCard';
+import SocialMedia from '../components/SocialMedia';
 
 
 
@@ -93,6 +94,7 @@ class Aboutme extends React.Component {
         return (
             <div className="aboutme-container">
                 <Header2 />
+                <SocialMedia />
                 <div className="aboutme-container__body">
                     <div className="img-container">
                         <img className="img-profile" alt="profile" src={profile} />
@@ -107,11 +109,10 @@ class Aboutme extends React.Component {
 
                             <div className="role">
                                 <div className="block"></div>
-                                <p>Front-End Developer Holaaaa</p>
+                                <p>Front-End Developer </p>
                             </div>
-
+                           
                         </div>
-
                         <div className="container-cards">
                             <Card classCard={this.state.one} classTop={this.state.topOne1} text='Hi!👋🏻' />
                             <Card2 classCard={this.state.two} classTop={this.state.topTwo1} text='I´m passionate about new technologies 📱' />
@@ -127,7 +128,7 @@ class Aboutme extends React.Component {
                         </div>
                     </div>
 
-            </div>
+                </div>
             </div>
         );
     }
