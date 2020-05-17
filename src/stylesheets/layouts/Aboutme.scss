@@ -16,7 +16,7 @@
 .aboutme-container {
     background-image: url(../../images/bg.png);
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     width: 100vw;
     height: 1500px;
     overflow-y: scroll;

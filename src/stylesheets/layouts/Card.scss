@@ -74,7 +74,7 @@
   background-color: white;
   opacity: 0.7;
   clip-path: polygon(10% 0%, 100% 1%, 100% 100%, 10% 100%, 0% 50%);
-  border-right: 8px solid #f0ff54;
+  border-right: 8px solid $secondaryColor;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,7 +167,7 @@
 }
 
 .cardTwo img {
-  border: 3px solid #f0ff54;
+  border: 3px solid $secondaryColor;
   border-radius: 50%;
   background-color: #f0ff54;
 }
@@ -178,7 +178,7 @@
   background-color: white;
   opacity: 0.7;
   clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
-  border-left: 8px solid #f0ff54;
+  border-left: 8px solid #43f6ae;
   display: flex;
   justify-content: center;
   align-items: center;
