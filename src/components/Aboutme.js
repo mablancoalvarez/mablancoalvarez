@@ -80,7 +80,7 @@ class Aboutme extends React.Component {
                 topOne4: 'topOne4'
             });
         }
-        if (document.documentElement.scrollTop > 550) {
+        if (document.documentElement.scrollTop > 500) {
             this.setState({
                 twoooo: 'cardTwo',
                 topTwo4: 'topTwo4'
@@ -107,7 +107,7 @@ class Aboutme extends React.Component {
 
                             <div className="role">
                                 <div className="block"></div>
-                                <p>Front-End Developer</p>
+                                <p>Front-End Developer Hola</p>
                             </div>
 
                         </div>
