@@ -68,19 +68,19 @@ class Aboutme extends React.Component {
                 topOne3: 'topOne3'
             });
         }
-        if (document.documentElement.scrollTop > 350) {
+        if (document.documentElement.scrollTop > 300) {
             this.setState({
                 twooo: 'cardTwo',
                 topTwo3: 'topTwo3'
             });
         }
-        if (document.documentElement.scrollTop > 450) {
+        if (document.documentElement.scrollTop > 350) {
             this.setState({
                 oneeee: 'cardOne',
                 topOne4: 'topOne4'
             });
         }
-        if (document.documentElement.scrollTop > 500) {
+        if (document.documentElement.scrollTop > 400) {
             this.setState({
                 twoooo: 'cardTwo',
                 topTwo4: 'topTwo4'
@@ -107,7 +107,7 @@ class Aboutme extends React.Component {
 
                             <div className="role">
                                 <div className="block"></div>
-                                <p>Front-End Developer Hola</p>
+                                <p>Front-End Developer Holaaaa</p>
                             </div>
 
                         </div>
