@@ -10,11 +10,11 @@ return (
     </p>
     
     <ul className="content__container__list">
-      <li className="content__container__list__item">Maria! 👩🏻‍💻 
+      <li className="content__container__list__item">Maria!  <span>👩🏻‍💻 </span>
       </li>
       <li className="content__container__list__item"> a Front-End Dev!</li>
-      <li className="content__container__list__item">pasionate! 💛</li>
-      <li className="content__container__list__item"> a Designer! 💡</li>
+      <li className="content__container__list__item">pasionate!  <span>💛</span></li>
+      <li className="content__container__list__item"> a Designer!  <span>💡</span></li>
     </ul>
   </div>
 </div>

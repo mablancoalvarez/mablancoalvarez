@@ -9,7 +9,6 @@
   align-items: center;
   position: absolute;
   z-index: 3;
-  
   animation-name: cardOne;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -31,6 +30,9 @@
 .topOne2 {
   top: 850px;
 }
+.topOne3{
+  top:1050px;
+}
 
 .cardOne img {
   border: 3px solid #f0ff54;
@@ -40,7 +42,7 @@
 
 .cardOne div {
   width: 220px;
-  height: 50px;
+  height: 70px;
   background-color: white;
   opacity: 0.7;
   clip-path: polygon(10% 0%, 100% 1%, 100% 100%, 10% 100%, 0% 50%);
@@ -53,7 +55,7 @@
 .cardOne p {
   font-family: "Asap";
   font-size: 15px;
-  padding-left: 10px;
+  padding-left: 27px;
 }
 
 @keyframes cardOne {
@@ -103,6 +105,9 @@
 .topTwo2 {
   top: 950px;
 }
+.topTwo3 {
+  top: 1150px;
+}
 
 .cardTwo img {
   border: 3px solid #f0ff54;
@@ -112,7 +117,7 @@
 
 .cardTwo div {
   width: 220px;
-  height: 50px;
+  height: 70px;
   background-color: white;
   opacity: 0.7;
   clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);

@@ -14,10 +14,14 @@ class Aboutme extends React.Component {
             two: 'hidden',
             onee: 'hidden',
             twoo: 'hidden',
+            oneee:'hidden',
+            twooo:'hidden',
             topOne1: 'hidden',
             topOne2: 'hidden',
+            topOne3:'hidden',
             topTwo1: 'hidden',
-            topTwo2: 'hidden'
+            topTwo2: 'hidden',
+            topTwo3:'hidden'
     }
     }
     componentDidMount() {    
@@ -53,10 +57,21 @@ class Aboutme extends React.Component {
             topTwo2: 'topTwo2'        
           });
         }
+        if(document.documentElement.scrollTop > 300){
+            this.setState({
+              oneee: 'cardOne',
+              topOne3: 'topOne3'
+            });
+          }
+          if(document.documentElement.scrollTop > 400){
+            this.setState({
+              twooo: 'cardTwo',
+              topTwo3: 'topTwo3'
+            });
+          }
     }
     
-    
-   
+
     render() {
         return (
             <div className="aboutme-container">
@@ -81,10 +96,12 @@ class Aboutme extends React.Component {
                     </div>
                 </div>
                 <div className="container-cards">
-                <Card classCard={this.state.one} classTop={this.state.topOne1} text='Are we meeting today?'/>
-                <Card2 classCard={this.state.two} classTop={this.state.topTwo1} text='Yes, What time suits you?'/>
-                <Card classCard={this.state.onee} classTop={this.state.topOne2} text='I was thinking after lunch'/>
-                <Card2 classCard={this.state.twoo} classTop={this.state.topTwo2} text='That is Perfect!'/>
+                <Card classCard={this.state.one} classTop={this.state.topOne1} text='Hi!👋🏻'/>
+                <Card2 classCard={this.state.two} classTop={this.state.topTwo1} text='I´m passionate about new technologies 📱'/>
+                <Card classCard={this.state.onee} classTop={this.state.topOne2} text='  I put the focus on solving problems'/>
+                <Card2 classCard={this.state.twoo} classTop={this.state.topTwo2} text='I love design!💡'/>
+                <Card classCard={this.state.oneee} classTop={this.state.topOne3} text='Success can only be achieved by working as a team'/>
+                <Card2 classCard={this.state.twooo} classTop={this.state.topTwo3} text='Do you want to meet me?'/>
             
                 </div>
             </div>
