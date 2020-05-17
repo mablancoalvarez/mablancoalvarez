@@ -24,14 +24,30 @@
 .topOne1 {
   top: 450px;
   @include forTablet {
+    top: 570px;
+  }
+  @include forPc {
     top: 650px;
   }
 }
 .topOne2 {
-  top: 850px;
+  top: 820px;
+  @include forPc {
+    top: 860px;
+  }
 }
 .topOne3{
-  top:1050px;
+
+top:1050px;
+  @include forPc {
+    top: 1080px;
+  }
+}
+.topOne4{
+  top:1250px;
+  @include forPc {
+    top: 1300px;
+  }
 }
 
 .cardOne img {
@@ -97,16 +113,30 @@
 .topTwo1 {
   top: 580px;
   @include forTablet {
-
-  top: 750px;
+  top: 690px;
   }
+  @include forPc {
+    top: 750px;
+    }
 }
 
 .topTwo2 {
-  top: 950px;
+  top: 940px;
+  @include forPc {
+    top: 970px;
+    }
 }
 .topTwo3 {
   top: 1150px;
+  @include forPc {
+    top: 1190px;
+    }
+}
+.topTwo4 {
+  top: 1350px;
+  @include forPc {
+    top: 1410px;
+    }
 }
 
 .cardTwo img {
@@ -128,7 +158,7 @@
 }
 
 .cardTwo p {
-  font-family: "Inconsolata", monospace;
+  font-family: "Asap";
   font-size: 15px;
   padding-right: 10px;
 }

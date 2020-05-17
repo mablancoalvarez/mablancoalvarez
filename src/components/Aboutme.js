@@ -3,6 +3,7 @@ import Header2 from './Header2';
 import profile from '../images/profile.png';
 import Card from '../components/Card';
 import Card2 from '../components/Card2';
+import ContactCard from '../components/ContactCard';
 
 
 
@@ -16,12 +17,16 @@ class Aboutme extends React.Component {
             twoo: 'hidden',
             oneee:'hidden',
             twooo:'hidden',
+            oneeee:'hidden',
+            twoooo:'hidden',
             topOne1: 'hidden',
             topOne2: 'hidden',
             topOne3:'hidden',
+            topOne4:'hidden',
             topTwo1: 'hidden',
             topTwo2: 'hidden',
-            topTwo3:'hidden'
+            topTwo3:'hidden',
+            topTwo4:'hidden'
     }
     }
     componentDidMount() {    
@@ -69,6 +74,18 @@ class Aboutme extends React.Component {
               topTwo3: 'topTwo3'
             });
           }
+          if(document.documentElement.scrollTop > 500){
+            this.setState({
+             oneeee: 'cardOne',
+             topOne4: 'topOne4'
+            });
+          }
+          if(document.documentElement.scrollTop > 580){
+            this.setState({
+                twoooo: 'cardTwo',
+                topTwo4: 'topTwo4'
+            });
+          }
     }
     
 
@@ -102,6 +119,10 @@ class Aboutme extends React.Component {
                 <Card2 classCard={this.state.twoo} classTop={this.state.topTwo2} text='I love design!💡'/>
                 <Card classCard={this.state.oneee} classTop={this.state.topOne3} text='Success can only be achieved by working as a team'/>
                 <Card2 classCard={this.state.twooo} classTop={this.state.topTwo3} text='Do you want to meet me?'/>
+                <Card classCard={this.state.oneeee} classTop={this.state.topOne4}  text= 'Contact with me'
+                />
+                <ContactCard classCard={this.state.twoooo} classTop={this.state.topTwo4} website='mailto:mablancoalvarez@gmail.com'
+                />
             
                 </div>
             </div>
