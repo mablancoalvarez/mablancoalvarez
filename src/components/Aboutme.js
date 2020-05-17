@@ -42,45 +42,45 @@ class Aboutme extends React.Component {
             });
         }
 
-        if (document.documentElement.scrollTop > 100) {
+        if (document.documentElement.scrollTop > 80) {
             this.setState({
                 two: 'cardTwo',
                 topTwo1: 'topTwo1'
             });
         }
 
-        if (document.documentElement.scrollTop > 150) {
+        if (document.documentElement.scrollTop > 130) {
             this.setState({
                 onee: 'cardOne',
                 topOne2: 'topOne2'
             });
         }
 
-        if (document.documentElement.scrollTop > 200) {
+        if (document.documentElement.scrollTop > 190) {
             this.setState({
                 twoo: 'cardTwo',
                 topTwo2: 'topTwo2'
             });
         }
-        if (document.documentElement.scrollTop > 300) {
+        if (document.documentElement.scrollTop > 250) {
             this.setState({
                 oneee: 'cardOne',
                 topOne3: 'topOne3'
             });
         }
-        if (document.documentElement.scrollTop > 450) {
+        if (document.documentElement.scrollTop > 350) {
             this.setState({
                 twooo: 'cardTwo',
                 topTwo3: 'topTwo3'
             });
         }
-        if (document.documentElement.scrollTop > 600) {
+        if (document.documentElement.scrollTop > 450) {
             this.setState({
                 oneeee: 'cardOne',
                 topOne4: 'topOne4'
             });
         }
-        if (document.documentElement.scrollTop > 700) {
+        if (document.documentElement.scrollTop > 550) {
             this.setState({
                 twoooo: 'cardTwo',
                 topTwo4: 'topTwo4'
