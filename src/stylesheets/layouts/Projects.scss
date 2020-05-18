@@ -79,7 +79,7 @@
             // margin-top: 70px;
             margin-top: 70px;
             @include forTablet {
-                max-width: 550px;
+                max-width: 600px;
                 max-height: 550px;
             }
             @include forPc {
@@ -88,15 +88,15 @@
             }
 
             .img-container {
-                max-width: 350px;
+                max-width: 340px;
                 max-height: 450px;
 
                 .image {
                     box-shadow: 1px 0px 10px 1px #818182;
-                    max-width: 350px;
+                    max-width: 330px;
                     max-height: 450px;
                     @include forTablet {
-                        max-width: 550px;
+                        max-width: 600px;
                         max-height: 550px;
                     }
                     @include forPc {

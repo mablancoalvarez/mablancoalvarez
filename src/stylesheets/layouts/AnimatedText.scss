@@ -111,6 +111,10 @@
       animation-duration: 10s;
       animation-iteration-count: infinite;
 
+      span {
+        padding:20px;
+      }
+
       @include forTablet {
         padding-left: 80px;
         font-size: 1.5rem;
