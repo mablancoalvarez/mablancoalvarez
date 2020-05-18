@@ -55,6 +55,11 @@ class Projects extends React.Component {
                                 textright="Awesome 
                                             Cards"
                                 textcontent="Digital Card Generator is a project made with React Js , starting from Vanila Javascript legacy code and using twitter's Rest API. We can customize the look of the card, filling in the data through a form and including dark mode."
+                                label1 = 'Javascript'
+                                label2 ='React'
+                                label3 ='HTML5'
+                                label4='Responsive Design'
+                                label5='CSS (Sass)'
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id ="1"
@@ -71,6 +76,11 @@ class Projects extends React.Component {
                                 textleft="2#"
                                 textright="Rick & Morty"
                                 textcontent="Responsive web developed with React js, CSS3 & Sass. I access the data info trought an API Rest. Rick & Morty is a project where you can find a specific character or filter by type , furthermore you can more details of each character in a new website route."
+                                label1 = 'Javascript'
+                                label2 ='React'
+                                label3 ='HTML5'
+                                label4='Responsive Design'
+                                label5='CSS (Sass)'
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id="2"
@@ -87,6 +97,11 @@ class Projects extends React.Component {
                                 textleft="3#"
                                 textright="Tv Show"
                                 textcontent="TV Browser developed with Vainilla Javascript, HTML5,CSS3 & SASS technology and API REST. You can search a Tv Show and you could save in a favorite list list, in addition you can refresh the website without lost your searches. "
+                                label1 = 'Javascript'
+                                label2 ='API Rest'
+                                label3 ='HTML5'
+                                label4='GULP'
+                                label5='CSS (Sass)'
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id="3"
@@ -103,6 +118,11 @@ class Projects extends React.Component {
                                 textleft="4#"
                                 textright="Collapsing Margins"
                                 textcontent="The goal was to create a responsive website with information about our team, according to the client needs, and it features a main page and a second page with a functional contact form.  Website was done using HTLM5 ,CSS3 & SASS and Gulp."
+                                label1 = 'HTML5'
+                                label2 ='Responsive Design'
+                                label3 ='CSS3'
+                                label4='SASS'
+                                label5='Flexbox'
                                 handleClick={this.handleClick} />
                             <CardBack
                                 id="4"

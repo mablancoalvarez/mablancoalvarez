@@ -14,7 +14,6 @@
     background-attachment: fixed;
 
     .card-body {
-     
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -38,7 +37,7 @@
         .card-front {
             margin-top: 70px;
             margin-bottom: 50px;
-            
+
             // max-width: 720px;
             // min-height: 550px;
             .container_text {
@@ -76,6 +75,16 @@
                     font-size: 1rem;
                 }
             }
+            .labels span {
+                
+                padding:5px;
+                border:1px solid black;
+                // border-left: 3px solid #daf11e;
+                // border-right: 3px solid #ffb021;
+                &.label2,&.label3,&.label4,&.label5{
+                    margin-left: 20px;
+                }
+            }
         }
         .card-back {
             // margin-top: 70px;
@@ -90,9 +99,8 @@
             }
 
             .img-container {
-                margin:0px;
-                padding:0px;
-                
+                margin: 0px;
+                padding: 0px;
 
                 .image {
                     box-shadow: 1px 0px 10px 1px #818182;
@@ -112,7 +120,7 @@
                 display: flex;
                 justify-content: space-between;
                 margin-top: 30px;
-                max-width: 330px;
+                max-width: 325px;
                 @include forTablet {
                     max-width: 600px;
                 }

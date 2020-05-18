@@ -1,6 +1,8 @@
 import React from 'react';
 import Header2 from './Header2';
 import AnimatedText from './AnimatedText';
+import SocialMedia from './SocialMedia';
+
 
 const Home = () => {
 
@@ -8,6 +10,7 @@ const Home = () => {
         <div className="container-image">
           <Header2 />
         <AnimatedText/>
+        <SocialMedia/>
         </div>
     )
 
