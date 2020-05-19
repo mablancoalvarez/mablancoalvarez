@@ -58,7 +58,7 @@ class Projects extends React.Component {
                                 label1 = 'Javascript'
                                 label2 ='React'
                                 label3 ='HTML5'
-                                label4='Responsive Design'
+                                label4='Responsive'
                                 label5='CSS (Sass)'
                                 handleClick={this.handleClick} />
                             <CardBack
@@ -79,7 +79,7 @@ class Projects extends React.Component {
                                 label1 = 'Javascript'
                                 label2 ='React'
                                 label3 ='HTML5'
-                                label4='Responsive Design'
+                                label4='Responsive'
                                 label5='CSS (Sass)'
                                 handleClick={this.handleClick} />
                             <CardBack
@@ -119,7 +119,7 @@ class Projects extends React.Component {
                                 textright="Collapsing Margins"
                                 textcontent="The goal was to create a responsive website with information about our team, according to the client needs, and it features a main page and a second page with a functional contact form.  Website was done using HTLM5 ,CSS3 & SASS and Gulp."
                                 label1 = 'HTML5'
-                                label2 ='Responsive Design'
+                                label2 ='Responsive'
                                 label3 ='CSS3'
                                 label4='SASS'
                                 label5='Flexbox'

@@ -75,17 +75,29 @@
                     font-size: 1rem;
                 }
             }
+            .labels {
+                display: flex;
+                flex-wrap: wrap;
+            }
             .labels span {
-                
-                padding:5px;
-                border:1px solid black;
-                // border-left: 3px solid #daf11e;
-                // border-right: 3px solid #ffb021;
-                &.label2,&.label3,&.label4,&.label5{
-                    margin-left: 20px;
+                margin: 2px;
+                padding: 3px;
+                border: 1px solid black;
+                @include forTablet {
+                    padding: 5px;
+                    border: 1px solid black;
+                    // border-left: 3px solid #daf11e;
+                    // border-right: 3px solid #ffb021;
+                    &.label2,
+                    &.label3,
+                    &.label4,
+                    &.label5 {
+                        margin-left: 20px;
+                    }
                 }
             }
-        }
+        
+    }
         .card-back {
             // margin-top: 70px;
             margin-top: 70px;
