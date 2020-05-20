@@ -9,6 +9,15 @@
 
     .wrapper-circles {
         .circle1 {
+            border-radius: 50%;
+            border: 10px solid $secondaryColor;
+            border-right: 3px solid #ffb021;
+            border-left: 3px solid #daf11e;
+            width: 200px;
+            height: 200px;
+          
+
+            @include forTablet {
             width: 300px;
             height: 300px;
             border-radius: 50%;
@@ -17,77 +26,83 @@
             left: 50%;
             border-right: 3px solid #ffb021;
             border-left: 3px solid #daf11e;
-
+            }
             .fab {
                 font-size: 60px;
-                position: absolute;
+                position: relative;
 
                 text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae !important;
                 &.fa-js-square {
-                    left: 56%;
-                    top: 38%;
+                    top: 169px;
+                    left: 93px;
                 }
                 &.fa-css3-alt {
-                    left: 20%;
-                    top: 40%;
+                    left: 60px;
+                    top: 14px;
                 }
                 &.fa-html5 {
-                    left: 56%;
-                    top: 73%;
+                    top: 50px;
+                    left: 81px;
                 }
                 &.fa-gulp {
-                    left: 36%;
-                    top: 43%;
+                    top: 90px;
                 }
                 &.fa-react {
-                    left: 26%;
-                    top: 13%;
+                    top: 140px;
                 }
 
                 &.fa-sass {
-                    left: 22%;
-                    top: 68%;
+                    top: 40px;
+                    left: 30px;
                 }
-                &.fa-git-alt {
-                    left: 61%;
-                    top: 15%;
-                }
+                // &.fa-git-alt {
+                // }
             }
         }
-    }
-    .circle2 {
-        width: 240px;
-        height: 240px;
-        border-radius: 50%;
-        border: 10px solid $mainColor;
-        position: absolute;
-        left: 20%;
-        border-right: 3px solid #ea36af;
-        border-left: 3px solid #43f6ae;
-        .img {
-            position: absolute;
-            width: 55px;
-            height: 55px;
-            &.ilustrator {
-                left: 20%;
-                top: 40%;
-            }
-            &.ae {
-                left: 34%;
-                top: 10%;
-            }
-            &.ps {
-                left: 47%;
-                top: 69%;
-            }
-        }
-        .fab.fa-adobe{
-            font-size: 60px;
-            position: absolute;
-            left: 59%;
-    top: 38%;
-    color:#ffb021;
 
+        .circle2 {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            border: 10px solid $mainColor;
+            position: absolute;
+            left: 20%;
+            border-right: 3px solid #ea36af;
+            border-left: 3px solid #43f6ae;
+            .img {
+                position: relative;
+                width: 55px;
+                height: 55px;
+                &.ilustrator {
+                    left: 20%;
+                    top: 40%;
+                }
+                &.ae {
+                    left: 34%;
+                    top: 10%;
+                }
+                &.ps {
+                    right: 47px;
+                    top: 20px;
+                }
+            }
+            .fab.fa-adobe {
+                font-size: 60px;
+                position: relative;
+                top: 128px;
+                right: 37px;
+                color: #ffb021;
+            }
+        }
+        .circle3 {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 10px solid $navColor;
+            border-left: 3px solid #daf11e;
+            position: absolute;
+            left: 38%;
+            top: 45%;
         }
     }
 }

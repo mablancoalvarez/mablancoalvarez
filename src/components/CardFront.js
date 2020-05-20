@@ -8,8 +8,9 @@ const CardFront = (props) => {
 
     }
     return (
-
+        
         <div className='card-front'>
+            
          
             <div className="container_text">
                 <h2 className="number">{props.textleft}</h2>

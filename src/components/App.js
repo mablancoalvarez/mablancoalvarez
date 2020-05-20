@@ -20,13 +20,13 @@ class App extends React.Component {
           <Route exact path="/">
             <Home/>
           </Route>
-          <Route exact path="/Aboutme">
+          <Route exact path="/about-me">
             <Aboutme />
           </Route>
-          <Route exact path="/Projects">
+          <Route exact path="/projects">
             <Projects />
           </Route>
-          <Route exact path="/Skills">
+          <Route exact path="/skills">
             <Skills />
           </Route>
         </Switch>
