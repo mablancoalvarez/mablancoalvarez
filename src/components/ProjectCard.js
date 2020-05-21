@@ -30,6 +30,8 @@ class ProjectCard extends React.Component {
 
                 <CardBack
                     img={data.img}
+                    code={data.code}
+                    website={data.website}
                     handleClick={this.handleClick}>
 
                 </CardBack>

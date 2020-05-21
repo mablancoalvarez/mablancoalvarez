@@ -10,7 +10,12 @@
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
-
+    &-body{ 
+    @include forPc{
+    display: flex;
+    justify-content: center;
+    }
+}
     .wrapper-circles {
         display: flex;
         flex-direction: column;
@@ -25,6 +30,12 @@
             min-width: 600px;
             margin: 20px;
             margin-bottom: 0px;
+        }
+        @include forPc{
+            max-width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
         }
 
         h2 {
