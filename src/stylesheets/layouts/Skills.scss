@@ -10,32 +10,49 @@
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
-    // height: 100vh;
 
     .wrapper-circles {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        @include forTablet {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            min-width: 600px;
+            margin: 20px;
+        }
 
         h2 {
+            display: inline-block;
             font-family: "Asap";
             font-size: 1.5rem;
             text-transform: uppercase;
             font-weight: 600;
             text-align: center;
-            display: inline-block;
+
+            @include forTablet {
+                margin-top: 40px;
+                font-size: 2rem;
+            }
         }
         img {
-           
-                width: 250px;
-                height: 250px;
-            
+            width: 250px;
+            height: 250px;
+            @include forTablet {
+                width: 400px;
+                height: 400px;
+            }
         }
         .circle1 {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin: 30px;
             &_text {
+                display: inline-block;
                 border-bottom: 3px solid #daf11e;
                 border-right: 3px solid #ffb021;
                 appearance: none;
@@ -43,32 +60,44 @@
                 -moz-appearance: none;
                 text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae !important;
                 margin: 0px;
+                @include forPc {
+                    border-bottom: 5px solid #daf11e;
+                    border-right: 5px solid #ffb021;
+                }
             }
-            
         }
         .circle2 {
             display: flex;
             flex-direction: column;
-            
+            margin: 30px;
+
             &_text {
                 text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae !important;
                 border-left: 3px solid #ea36af;
                 border-bottom: 3px solid #43f6ae;
                 margin: 0px;
+                @include forPc {
+                    border-left: 5px solid #ea36af;
+                    border-bottom: 5px solid #43f6ae;
+                }
             }
         }
-            .circle3 {
-                display: flex;
-                flex-direction: column;
-                
-                &_text {
-                    text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae !important;
-                    border-left: 3px solid #ffb021;
-                    border-right: 3px solid #ffb021;
-                    // border-top: 3px solid #43f6ae;
-                    margin: 0px;
+        .circle3 {
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+
+            &_text {
+                text-shadow: 0.06rem 0 0.06rem #ea36af, 9rem 20px 20rem #43f6ae !important;
+                border-left: 3px solid #ffb021;
+                border-right: 3px solid #ffb021;
+                // border-top: 3px solid #43f6ae;
+                margin: 0px;
+                @include forPc {
+                    border-left: 5px solid #ffb021;
+                    border-right: 5px solid #ffb021;
                 }
-            
+            }
         }
     }
 }
