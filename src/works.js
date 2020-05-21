@@ -1,4 +1,4 @@
-
+import awesome from './images/awesome.png';
 const works = [
 
     {
