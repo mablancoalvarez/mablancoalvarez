@@ -13,7 +13,7 @@
     background-attachment: fixed;
     @include forPc {
     background-image: url(../../images/bg.png);
-    background-size: unset;
+    background-size: inherit;
 
 }
     .card-body {
