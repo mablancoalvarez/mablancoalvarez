@@ -14,14 +14,19 @@
 
 // }
 .aboutme-container {
-    background-image: url(../../images/bg.png);
-    background-position: center center;
-    background-size: contain;
-    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    // width: 100vw;
+    background-image: url("../../images/bgvertical.png");
+   
     height: 1500px;
     overflow-y: scroll;
     background-attachment: fixed;
     font-family: "Asap";
+    @include forPc {
+        background-image: url(../../images/bg.png);
+        background-size: inherit;
+    }
     &__body {
         padding: 1.25rem;
 
