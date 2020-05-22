@@ -21,7 +21,7 @@
    
     height: 1500px;
     overflow-y: scroll;
-    background-attachment: fixed;
+   
     font-family: "Asap";
     @include forPc {
         background-image: url(../../images/bg.png);

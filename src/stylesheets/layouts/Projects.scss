@@ -5,12 +5,11 @@
     padding: 0px;
 }
 .projects-container {
-    background-image: url("../../images/bgvertical.png");
-    background-size: cover;
-    
-    // width: 100vw;
-    // height: 100vh;
     background-attachment: fixed;
+    
+    background-image: url("../../images/bgvertical.png");
+   
+
     @include forPc {
     background-image: url(../../images/bg.png);
     background-size: inherit;
