@@ -8,7 +8,10 @@
     background-attachment: fixed;
     background-size: cover;
     background-image: url("../../images/bgvertical.png");
-   
+   @include forTablet{
+    background-image: url(../../images/bg.png);
+    background-size: inherit;
+   }
 
     @include forPc {
     background-image: url(../../images/bg.png);
