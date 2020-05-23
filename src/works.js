@@ -26,7 +26,7 @@ const works = [
         name: "Awesome Cards",
         number: "2#",
         description: "Digital Card Generator is a project made with React Js , starting from Vanila Javascript legacy code and using twitter's Rest API. We can customize the look of the card, filling in the data through a form and including dark mode.",
-        code:"http://beta.adalab.es/project-promo-i-module-3-team-1-new/#/",
+        code:"https://github.com/mablancoalvarez/project-promo-i-module-3-team-1-new",
         website:"http://beta.adalab.es/project-promo-i-module-3-team-1-new/#/",
 
         labels:{
