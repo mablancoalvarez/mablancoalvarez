@@ -1,12 +1,12 @@
 import React from 'react';
-import Header2 from './Header2';
+import Header from './Header';
 import Rings from './Rings';
 
 const Skills = () => {
 
     return(
         <div className="container_skills">
-            <Header2/>
+            <Header/>
             <div className="container_skills-body">
             <Rings/>
             </div>

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import logo from '../images/logo.png';
 
 
-const Header2 = () => {
+const Header = () => {
     return (
         <div className="menu-wrapper">
              <img className ="logo" src={logo} alt="logo"></img>
@@ -19,4 +19,4 @@ const Header2 = () => {
 }
 
 
-export default Header2;
+export default Header;

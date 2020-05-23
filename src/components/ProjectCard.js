@@ -16,6 +16,7 @@ class ProjectCard extends React.Component {
     }
 
     render() { 
+        console.log(this.state)
         const {data}= this.props;
         const {isFlipped} = this.state;
         return (

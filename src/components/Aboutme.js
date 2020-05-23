@@ -1,5 +1,5 @@
 import React from 'react';
-import Header2 from './Header2';
+import Header from './Header';
 import profile from '../images/profile.png';
 import Card from '../components/Card';
 import Card2 from '../components/Card2';
@@ -93,7 +93,7 @@ class Aboutme extends React.Component {
     render() {
         return (
             <div className="aboutme-container">
-                <Header2 />
+                <Header />
                 <SocialMedia />
                 <div className="aboutme-container__body">
                     <div className="img-container">

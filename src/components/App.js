@@ -1,11 +1,7 @@
 import React from 'react';
 import '../stylesheets/App.scss';
-import Home from './Home';
-import { Route, Switch } from 'react-router-dom';
-import Aboutme from './Aboutme';
-import Projects from './Projects';
-import Skills from './Skills';
 import Footer from './Footer';
+import Routing from './Routing';
 
 
 class App extends React.Component {
@@ -16,7 +12,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Switch>
+       
+        <Routing/>
+        {/* <Switch>
           <Route exact path="/">
             <Home/>
           </Route>
@@ -29,7 +27,7 @@ class App extends React.Component {
           <Route exact path="/skills">
             <Skills />
           </Route>
-        </Switch>
+        </Switch> */}
         <Footer/>
       </div>
 
