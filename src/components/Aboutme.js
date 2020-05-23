@@ -114,13 +114,14 @@ class Aboutme extends React.Component {
                            
                         </div>
                         <div className="container-cards">
-                            <Card classCard={this.state.one} classTop={this.state.topOne1} text='Hi!👋🏻' />
-                            <Card2 classCard={this.state.two} classTop={this.state.topTwo1} text='I´m passionate about new technologies 📱' />
-                            <Card classCard={this.state.onee} classTop={this.state.topOne2} text='  I put the focus on solving problems' />
-                            <Card2 classCard={this.state.twoo} classTop={this.state.topTwo2} text='I love design!💡' />
-                            <Card classCard={this.state.oneee} classTop={this.state.topOne3} text='Success can only be achieved by working as a team' />
-                            <Card2 classCard={this.state.twooo} classTop={this.state.topTwo3} text='Do you want to meet me?' />
-                            <Card classCard={this.state.oneeee} classTop={this.state.topOne4} text='Contact with me'
+                            <Card classCard={this.state.one} classTop={this.state.topOne1} text='5 things you should know about me!👋🏻' />
+                            <Card2 classCard={this.state.two} classTop={this.state.topTwo1} text=' Girl from Malaga happily living in Madrid.💃🏻' />
+                            <Card classCard={this.state.onee} classTop={this.state.topOne2} text="I've worked for Apple for 8 years 🍏" />
+                            <Card2 classCard={this.state.twoo} classTop={this.state.topTwo2} text='I play electric bass! Stevie Wonder is a reference for me 🎸' />
+                            <Card classCard={this.state.oneee} classTop={this.state.topOne3} text="I've had my own company 🏢" />
+                            <Card2 classCard={this.state.twooo} classTop={this.state.topTwo3} text="I've managed teams and  I love working with people"
+ />
+                            <Card classCard={this.state.oneeee} classTop={this.state.topOne4} text='Do you want to meet me'
                             />
                             <ContactCard classCard={this.state.twoooo} classTop={this.state.topTwo4} website='mailto:mablancoalvarez@gmail.com'
                             />
