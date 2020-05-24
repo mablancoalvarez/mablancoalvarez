@@ -18,10 +18,10 @@
     background-attachment: fixed;
     // width: 100vw;
     background-image: url("../../images/bgvertical.png");
-   
+
     height: 1500px;
     overflow-y: scroll;
-   
+
     font-family: "Asap";
     @include forPc {
         background-image: url(../../images/bg.png);
@@ -62,17 +62,17 @@
             }
         }
     }
-    a{
+    a {
         text-decoration: none;
-        color:$secondaryColor;
+        color: $secondaryColor;
         font-size: 1.2rem;
         cursor: pointer;
         &:hover,
         &:focus {
             color: $mainColor;
-            text-decoration: none;  
+            text-decoration: none;
+        }
     }
-}
     .social-icons {
         display: flex;
         flex-direction: column;
@@ -104,6 +104,7 @@
             font-size: 25px;
             color: $mainColor;
             padding: 5px;
+            
 
             &:hover,
             &:focus {
@@ -111,6 +112,9 @@
                 opacity: 0.7;
                 transition: all 0.7s ease;
             }
+        }
+        .fa-file-download {
+            text-align:center;
         }
 
         @include forTablet {
@@ -123,6 +127,7 @@
                 font-size: 35px;
                 padding: 10px;
             }
+            
         }
     }
 }

@@ -14,12 +14,12 @@ class Aboutme extends React.Component {
         this.state = {
             one: 'hidden',
             two: 'hidden',
-            onee: 'hidden',
-            twoo: 'hidden',
-            oneee: 'hidden',
-            twooo: 'hidden',
-            oneeee: 'hidden',
-            twoooo: 'hidden',
+            oneOne: 'hidden',
+            twoOne: 'hidden',
+            oneTwo: 'hidden',
+            twoTwo: 'hidden',
+            oneThree: 'hidden',
+            twoThree: 'hidden',
             topOne1: 'hidden',
             topOne2: 'hidden',
             topOne3: 'hidden',
@@ -52,38 +52,38 @@ class Aboutme extends React.Component {
 
         if (document.documentElement.scrollTop > 130) {
             this.setState({
-                onee: 'cardOne',
+                oneOne: 'cardOne',
                 topOne2: 'topOne2'
             });
         }
 
         if (document.documentElement.scrollTop > 190) {
             this.setState({
-                twoo: 'cardTwo',
+                twoOne: 'cardTwo',
                 topTwo2: 'topTwo2'
             });
         }
         if (document.documentElement.scrollTop > 250) {
             this.setState({
-                oneee: 'cardOne',
+                oneTwo: 'cardOne',
                 topOne3: 'topOne3'
             });
         }
         if (document.documentElement.scrollTop > 300) {
             this.setState({
-                twooo: 'cardTwo',
+                twoTwo: 'cardTwo',
                 topTwo3: 'topTwo3'
             });
         }
         if (document.documentElement.scrollTop > 350) {
             this.setState({
-                oneeee: 'cardOne',
+                oneThree: 'cardOne',
                 topOne4: 'topOne4'
             });
         }
         if (document.documentElement.scrollTop > 400) {
             this.setState({
-                twoooo: 'cardTwo',
+                twoThree: 'cardTwo',
                 topTwo4: 'topTwo4'
             });
         }
@@ -116,14 +116,14 @@ class Aboutme extends React.Component {
                         <div className="container-cards">
                             <Card classCard={this.state.one} classTop={this.state.topOne1} text='5 things you should know about me!👋🏻' />
                             <Card2 classCard={this.state.two} classTop={this.state.topTwo1} text=' Girl from Malaga happily living in Madrid.💃🏻' />
-                            <Card classCard={this.state.onee} classTop={this.state.topOne2} text="I've worked for Apple for 8 years 🍏" />
-                            <Card2 classCard={this.state.twoo} classTop={this.state.topTwo2} text='I play electric bass! Stevie Wonder is a reference for me 🎸' />
-                            <Card classCard={this.state.oneee} classTop={this.state.topOne3} text="I've had my own company 🏢" />
-                            <Card2 classCard={this.state.twooo} classTop={this.state.topTwo3} text="I've managed teams and  I love working with people"
+                            <Card classCard={this.state.oneOne} classTop={this.state.topOne2} text="I've worked for Apple for 8 years 🍏" />
+                            <Card2 classCard={this.state.twoOne} classTop={this.state.topTwo2} text='I play electric bass! Stevie Wonder is a reference for me 🎸' />
+                            <Card classCard={this.state.oneTwo} classTop={this.state.topOne3} text="I've had my own company 🏢" />
+                            <Card2 classCard={this.state.twoTwo} classTop={this.state.topTwo3} text="I've managed teams and  I love working with people"
  />
-                            <Card classCard={this.state.oneeee} classTop={this.state.topOne4} text='Do you want to meet me'
+                            <Card classCard={this.state.oneThree} classTop={this.state.topOne4} text='Do you want to meet me'
                             />
-                            <ContactCard classCard={this.state.twoooo} classTop={this.state.topTwo4} website='mailto:mablancoalvarez@gmail.com'
+                            <ContactCard classCard={this.state.twoThree} classTop={this.state.topTwo4} website='mailto:mablancoalvarez@gmail.com'
                             />
 
                         </div>

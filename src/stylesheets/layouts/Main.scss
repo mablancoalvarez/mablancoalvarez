@@ -60,6 +60,10 @@ html {
             transition: all 0.7s ease;
         }
     }
+    
+    a {
+        text-align:center;
+    }
 
     @include forTablet {
         top: 50%;
