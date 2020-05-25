@@ -6,37 +6,7 @@ import ProjectCard from './ProjectCard';
 
 
 class Projects extends React.Component {
-    constructor() {
-        super();
-        // this.state = {
-        //     isFlipped1: false,
-        //     isFlipped2: false,
-        //     isFlipped3: false,
-        //     isFlipped4: false
 
-        // };
-      
-        // this.handleClick = this.handleClick.bind(this);
-    }
-
-    // handleClick(id) {
-    //     let key;
-    //     if (id === "1") {
-    //         key = "isFlipped1";
-
-    //     }
-
-    //     else if (id === "2") {
-    //         key = "isFlipped2";
-    //     }
-    //     else if (id === "3") {
-    //         key = "isFlipped3";
-    //     }
-    //     else
-    //         key = "isFlipped4";
-
-    //     this.setState(prevState => ({ [key]: !prevState[key] }));
-    // }
 
     render() {
         return (

@@ -15,15 +15,15 @@ class ProjectCard extends React.Component {
         this.setState(prevState => ({ isFlipped: !prevState.isFlipped }))
     }
 
-    render() { 
-        console.log(this.state)
-        const {data}= this.props;
-        const {isFlipped} = this.state;
+    render() {
+
+        const { data } = this.props;
+        const { isFlipped } = this.state;
         return (
             <ReactCardFlip isFlipped={isFlipped}>
 
                 <CardFront textright={data.name} textleft={data.number} textcontent={data.description} label1={data.labels.label1}
-                label2={data.labels.label2} label3={data.labels.label3} label4={data.labels.label4}label5={data.labels.label5}
+                    label2={data.labels.label2} label3={data.labels.label3} label4={data.labels.label4} label5={data.labels.label5}
                     handleClick={this.handleClick}>
 
 

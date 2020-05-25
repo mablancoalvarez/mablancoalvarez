@@ -11,7 +11,7 @@ const SocialMedia = (props) => {
             <a href='mailto:mablancoalvarez@gmail.com' target="_blank" rel="noreferrer noopener">
                 <i className="fas fa-at"></i></a>
             <a href={CV} target="_blank" rel="noopener noreferrer" download>
-                <i class="fas fa-file-download"></i>
+                <i className="fas fa-file-download"></i>
             </a>
         </div>
     );
