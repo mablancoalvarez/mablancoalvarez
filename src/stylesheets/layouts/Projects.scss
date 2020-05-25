@@ -9,12 +9,12 @@
     // background-size: cover;
     background-image: url("../../images/bgvertical 2.png");
    @include forTablet{
-    background-image: url(../../images/bg.png);
+    background-image: url(../../images/bg2.png);
     background-size: inherit;
    }
 
     @include forPc {
-    background-image: url(../../images/bg.png);
+    background-image: url(../../images/bg2.png);
     background-size: inherit;
 
 }
