@@ -62,11 +62,16 @@
             }
         }
     }
-    a {
+   a {
         text-decoration: none;
         color: $secondaryColor;
         // font-size: 1.2rem;
         cursor: pointer;
+        &:hover,
+            &:focus {
+                color: $mainColor;
+                text-decoration: none;
+            }
        
     }
     .social-icons {
