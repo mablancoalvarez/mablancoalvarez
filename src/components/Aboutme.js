@@ -117,7 +117,7 @@ class Aboutme extends React.Component {
                             <Card classCard={this.state.one} classTop={this.state.topOne1} text='5 things you should know about me!👋🏻' />
                             <Card2 classCard={this.state.two} classTop={this.state.topTwo1} text=' Girl from Malaga happily living in Madrid.💃🏻' />
                             <Card classCard={this.state.oneOne} classTop={this.state.topOne2} text="I've worked for Apple for 8 years 🍏" />
-                            <Card2 classCard={this.state.twoOne} classTop={this.state.topTwo2} text='I play electric bass!Stevie Wonder is a reference for me'/>
+                            <Card2 classCard={this.state.twoOne} classTop={this.state.topTwo2} text='I play electric bass! Stevie Wonder is a reference for me'/>
                             <Card classCard={this.state.oneTwo} classTop={this.state.topOne3} text="I've had my own company 🏢" />
                             <Card2 classCard={this.state.twoTwo} classTop={this.state.topTwo3} text="I've managed teams and  I love working with people"
  />
