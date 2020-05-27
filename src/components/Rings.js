@@ -1,7 +1,7 @@
 import React from 'react';
 import techicons from '../images/techicons.png';
 import designicons from '../images/desingicons.png';
-import personalicons from '../images/personalicons.png'
+import personalcons from '../images/personalcons.png';
 
 
 const Rings = () => {
@@ -20,7 +20,7 @@ const Rings = () => {
             </div>
             <div className="circle3">
             <h2 className="circle3_text">Personal Skills</h2>
-                <img className="circle3_img" src={personalicons}alt="personal skills"></img>
+                <img className="circle3_img" src={personalcons}alt="personal skills"></img>
             </div>
 
       </div>)

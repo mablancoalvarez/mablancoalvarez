@@ -7,9 +7,9 @@
 .projects-container {
     background-attachment: fixed;
     // background-size: cover;
-    background-image: url("../../images/bgvertical 2.png");
+    background-image: url("../../images/bgvertical.jpg");
    @include forTablet{
-    background-image: url(../../images/bg2.png);
+    background-image: url(../../images/bg.jpg);
     background-size: inherit;
    }
 
