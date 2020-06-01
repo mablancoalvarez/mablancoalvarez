@@ -91,8 +91,11 @@ class Aboutme extends React.Component {
 
 
     render() {
+        const {one,two,oneOne,oneTwo,twoOne, twoTwo,oneThree,twoThree,topOne1,topOne2,topOne3,topOne4,topTwo1,topTwo2,topTwo3,topTwo4} = this.state;
         return (
+           
             <div className="aboutme-container">
+                
                 <Header />
                 <SocialMedia />
                 <div className="aboutme-container__body">
@@ -114,16 +117,16 @@ class Aboutme extends React.Component {
                            
                         </div>
                         <div className="container-cards">
-                            <Card classCard={this.state.one} classTop={this.state.topOne1} text='5 things you should know about me!👋🏻' />
-                            <Card2 classCard={this.state.two} classTop={this.state.topTwo1} text=' Girl from Malaga happily living in Madrid.💃🏻' />
-                            <Card classCard={this.state.oneOne} classTop={this.state.topOne2} text="I've worked for Apple for 8 years 🍏" />
-                            <Card2 classCard={this.state.twoOne} classTop={this.state.topTwo2} text='I play electric bass! Stevie Wonder is a reference for me'/>
-                            <Card classCard={this.state.oneTwo} classTop={this.state.topOne3} text="I've had my own company 🏢" />
-                            <Card2 classCard={this.state.twoTwo} classTop={this.state.topTwo3} text="I've managed teams and  I love working with people"
+                            <Card classCard={one} classTop={topOne1} text='5 things you should know about me!👋🏻' />
+                            <Card2 classCard={two} classTop={topTwo1} text=' Girl from Malaga happily living in Madrid.💃🏻' />
+                            <Card classCard={oneOne} classTop={topOne2} text="I've worked for Apple for 8 years 🍏" />
+                            <Card2 classCard={twoOne} classTop={topTwo2} text='I play electric bass! Stevie Wonder is a reference for me'/>
+                            <Card classCard={oneTwo} classTop={topOne3} text="I've had my own company 🏢" />
+                            <Card2 classCard={twoTwo} classTop={topTwo3} text="I've managed teams and  I love working with people"
  />
-                            <Card classCard={this.state.oneThree} classTop={this.state.topOne4} text='Do you want to meet me'
+                            <Card classCard={oneThree} classTop={topOne4} text='Do you want to meet me'
                             />
-                            <ContactCard classCard={this.state.twoThree} classTop={this.state.topTwo4} website='mailto:mablancoalvarez@gmail.com'
+                            <ContactCard classCard={twoThree} classTop={topTwo4} website='mailto:mablancoalvarez@gmail.com'
                             />
 
                         </div>
