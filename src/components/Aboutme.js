@@ -6,8 +6,6 @@ import Card2 from '../components/Card2';
 import ContactCard from '../components/ContactCard';
 import SocialMedia from '../components/SocialMedia';
 
-
-
 class Aboutme extends React.Component {
     constructor(props) {
         super(props);
