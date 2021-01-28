@@ -48,7 +48,7 @@ const works = [
         number: "3#",
         description: "Responsive web developed with React js, CSS3 & Sass. I access the data info trought an API Rest. Rick & Morty is a project where you can find a specific character or filter by type , furthermore you can more details of each character in a new website route.",
         code:"https://github.com/mablancoalvarez/modulo-3-evaluacion-final-mablancoalvarez",
-        website:"http://beta.adalab.es/modulo-3-evaluacion-final-mablancoalvarez/#/",
+        website:"http://mablancoalvarez.github.io/modulo-3-evaluacion-final-mablancoalvarez/",
         labels:{
 
             label1 : "Javascript",
@@ -67,7 +67,7 @@ const works = [
         number: "4#",
         description: "TV Browser developed with Vainilla Javascript, HTML5,CSS3 & SASS technology and API REST. You can search a Tv Show and you could save in a favorite list list, in addition you can refresh the website without lost your searches.",
         code:"https://github.com/mablancoalvarez/modulo-2-evaluacion-final-mablancoalvarez",
-        website:"http://beta.adalab.es/modulo-2-evaluacion-final-mablancoalvarez/?input=game",
+        website:"http://mablancoalvarez.github.io/modulo-2-evaluacion-final-mablancoalvarez/",
         labels:{
 
             label1 : 'Javascript',
